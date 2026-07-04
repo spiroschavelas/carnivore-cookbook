@@ -2,7 +2,6 @@ const STRICTNESS = new Set(["strict", "animal-based", "practical"]);
 const DAIRY = new Set(["none", "optional", "included", "heavy"]);
 const DIFFICULTY = new Set(["easy", "medium", "hard"]);
 const METHODS = ["oven", "airFryer", "blackstone"];
-const RECOMMENDED_METHODS = [...METHODS, "none"];
 const METHOD_QUALITY = new Set(["best", "good", "acceptable", "notRecommended", "unavailable"]);
 
 export function normalizeList(value) {
@@ -22,6 +21,16 @@ export function normalizeLines(value) {
 export function recipeFromForm(form) {
   const data = new FormData(form);
   const baseServings = Number(data.get("baseServings") || data.get("servings"));
+  const selectedRecommendedMethod = clean(data.get("recommendedMethod"));
+  const recommendedMethod = selectedRecommendedMethod === "other"
+    ? {
+        type: "other",
+        label: clean(data.get("recommendedMethodLabel")),
+        reason: clean(data.get("recommendedReason")),
+        instructions: normalizeLines(data.get("recommendedMethodInstructions"))
+      }
+    : selectedRecommendedMethod;
+
   return {
     id: slugify(data.get("id")),
     title: clean(data.get("title")),
@@ -42,8 +51,8 @@ export function recipeFromForm(form) {
     steps: normalizeLines(data.get("steps")),
     notes: clean(data.get("notes")),
     tags: normalizeList(data.get("tags") || ""),
-    recommendedMethod: clean(data.get("recommendedMethod")),
-    recommendedReason: clean(data.get("recommendedReason")),
+    recommendedMethod,
+    ...(typeof recommendedMethod === "string" ? { recommendedReason: clean(data.get("recommendedReason")) } : {}),
     methods: buildMethods(data),
     image: clean(data.get("image"))
   };
@@ -90,6 +99,9 @@ export function validateRecipe(recipe) {
   const errors = [];
   const baseServings = recipe.baseServings ?? recipe.servings;
   const methods = recipe.methods || {};
+  const recommendation = recipe.recommendedMethod;
+  const isApplianceRecommendation = typeof recommendation === "string" && METHODS.includes(recommendation);
+  const isOtherRecommendation = recommendation && typeof recommendation === "object" && recommendation.type === "other";
   const usableMethods = METHODS.filter((method) => {
     const quality = methods[method]?.quality;
     return quality && !["unavailable", "notRecommended"].includes(quality);
@@ -110,11 +122,15 @@ export function validateRecipe(recipe) {
   if (!Number.isInteger(baseServings) || baseServings < 1) errors.push("Base servings must be a positive whole number.");
   if (!Array.isArray(recipe.ingredients) || !recipe.ingredients.length) errors.push("At least one ingredient is required.");
   if (!Array.isArray(recipe.steps) || !recipe.steps.length) errors.push("At least one preparation step is required.");
-  if (!RECOMMENDED_METHODS.includes(recipe.recommendedMethod)) errors.push("Recommended method must be oven, airFryer, blackstone, or none.");
-  if (!recipe.recommendedReason) errors.push("Recommended reason is required.");
-  if (!usableMethods.length && recipe.recommendedMethod !== "none") errors.push("Recommended method must be none when no listed appliance method is available.");
-  if (usableMethods.length && recipe.recommendedMethod !== "none" && !usableMethods.includes(recipe.recommendedMethod)) {
+  if (!isApplianceRecommendation && !isOtherRecommendation) errors.push("Recommended method must be oven, airFryer, blackstone, or an other-method object.");
+  if (isApplianceRecommendation && !recipe.recommendedReason) errors.push("Recommended reason is required for appliance recommendations.");
+  if (isApplianceRecommendation && !usableMethods.includes(recommendation)) {
     errors.push("Recommended method should match an available appliance method.");
+  }
+  if (isOtherRecommendation && !clean(recommendation.label)) errors.push("Other recommended method label is required.");
+  if (isOtherRecommendation && !clean(recommendation.reason)) errors.push("Other recommended method reason is required.");
+  if (isOtherRecommendation && recommendation.instructions && !Array.isArray(recommendation.instructions)) {
+    errors.push("Other recommended method instructions must be a list.");
   }
 
   METHODS.forEach((method) => {

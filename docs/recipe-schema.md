@@ -30,7 +30,7 @@ Every recipe in `data/recipes.json` should use this shape:
   "steps": [],
   "notes": "",
   "tags": [],
-  "recommendedMethod": "oven | airFryer | blackstone | none",
+  "recommendedMethod": "oven | airFryer | blackstone",
   "recommendedReason": "",
   "methods": {
     "oven": {
@@ -56,6 +56,19 @@ Every recipe in `data/recipes.json` should use this shape:
 }
 ```
 
+For a true recommended method outside the three listed appliances, use an object:
+
+```json
+{
+  "recommendedMethod": {
+    "type": "other",
+    "label": "Stovetop custard + ice cream maker",
+    "reason": "This recipe needs gentle stovetop custard preparation and churning.",
+    "instructions": []
+  }
+}
+```
+
 ## Field rules
 
 - `id`: unique lowercase slug using letters, numbers, and hyphens.
@@ -65,8 +78,8 @@ Every recipe in `data/recipes.json` should use this shape:
 - `dairy` and `dairyLevel`: dairy is valid in this cookbook. Use these fields for filtering and clarity, not as a warning.
 - `baseServings`: serving count used for ingredient scaling.
 - `ingredients`: use structured quantities where practical. Non-numeric items can use `quantity: null` and keep the original text.
-- `recommendedMethod`: one of `oven`, `airFryer`, `blackstone`, or `none`. Use `none` when no listed appliance method fits the recipe.
-- `recommendedReason`: short practical reason why that method is best, or why no listed appliance is recommended.
+- `recommendedMethod`: one of `oven`, `airFryer`, or `blackstone`, or an object with `type: "other"`, `label`, `reason`, and optional `instructions`.
+- `recommendedReason`: short practical reason for appliance-string recommendations. Other-method recipes put the reason inside the `recommendedMethod` object.
 - `methods`: include all three appliance keys. Use `notRecommended` or `unavailable` with a clear note when a method does not make sense.
 
 Avoid medical, weight-loss, and health claims in recipes, notes, and UI copy.

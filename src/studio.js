@@ -8,6 +8,7 @@ const validationList = document.querySelector("#validation-list");
 const livePreview = document.querySelector("#live-preview");
 const statusLine = document.querySelector("#studio-status");
 const categoryOptions = document.querySelector("#category-options");
+const otherMethodFields = [...document.querySelectorAll("[data-other-method-field]")];
 
 let existingRecipes = [];
 
@@ -39,6 +40,7 @@ function bindEvents() {
 }
 
 function updateOutput() {
+  updateOtherMethodFields();
   const recipe = recipeFromForm(form);
   const errors = validateRecipe(recipe);
   jsonOutput.textContent = JSON.stringify(recipe, null, 2);
@@ -121,6 +123,7 @@ function loadLocalDraft() {
 
 function fillForm(recipe) {
   const baseServings = recipe.baseServings ?? recipe.servings;
+  const recommendation = normalizeRecommendationForForm(recipe);
   Object.entries({
     id: recipe.id,
     title: recipe.title,
@@ -139,8 +142,10 @@ function fillForm(recipe) {
     steps: (recipe.steps || []).join("\n"),
     notes: recipe.notes,
     tags: (recipe.tags || []).join(", "),
-    recommendedMethod: recipe.recommendedMethod,
-    recommendedReason: recipe.recommendedReason,
+    recommendedMethod: recommendation.method,
+    recommendedMethodLabel: recommendation.label,
+    recommendedReason: recommendation.reason,
+    recommendedMethodInstructions: recommendation.instructions,
     ovenQuality: recipe.methods?.oven?.quality,
     ovenNote: recipe.methods?.oven?.note,
     ovenInstructions: (recipe.methods?.oven?.instructions || []).join("\n"),
@@ -154,6 +159,42 @@ function fillForm(recipe) {
   }).forEach(([name, value]) => {
     const field = form.elements.namedItem(name);
     if (field) field.value = value ?? "";
+  });
+  updateOtherMethodFields();
+}
+
+function normalizeRecommendationForForm(recipe) {
+  const method = recipe.recommendedMethod;
+  if (method && typeof method === "object" && method.type === "other") {
+    return {
+      method: "other",
+      label: method.label,
+      reason: method.reason,
+      instructions: (method.instructions || []).join("\n")
+    };
+  }
+
+  if (method === "none") {
+    return {
+      method: "other",
+      label: "No listed appliance",
+      reason: recipe.recommendedReason,
+      instructions: ""
+    };
+  }
+
+  return {
+    method,
+    label: "",
+    reason: recipe.recommendedReason,
+    instructions: ""
+  };
+}
+
+function updateOtherMethodFields() {
+  const isOther = form.elements.namedItem("recommendedMethod")?.value === "other";
+  otherMethodFields.forEach((field) => {
+    field.hidden = !isOther;
   });
 }
 

@@ -355,8 +355,12 @@
     "steps": ["Warm cream and salt.", "Temper egg yolks with warm cream.", "Stir over low heat until lightly thickened.", "Chill fully before churning."],
     "notes": "This is unsweetened. Add only ingredients that fit your own version.",
     "tags": ["dessert", "cream", "egg yolks", "dairy"],
-    "recommendedMethod": "none",
-    "recommendedReason": "No oven, air fryer, or Blackstone method is appropriate; stovetop custard plus ice cream maker is the practical method.",
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop custard + ice cream maker",
+      "reason": "This recipe needs gentle stovetop custard preparation and churning. Oven, air fryer, and Blackstone are not suitable.",
+      "instructions": ["Warm cream and salt on the stovetop.", "Temper egg yolks with warm cream.", "Stir gently until lightly thickened.", "Chill fully, then churn in an ice cream maker."]
+    },
     "methods": {
       "oven": { "available": false, "quality": "unavailable", "note": "This recipe needs stovetop custard and churning, not oven cooking.", "instructions": [] },
       "airFryer": { "available": false, "quality": "unavailable", "note": "Air fryer heat is not suitable for custard or ice cream.", "instructions": [] },
@@ -389,8 +393,12 @@
     "steps": ["Whisk yolks and salt.", "Warm cream.", "Temper yolks with warm cream.", "Cook gently until thickened.", "Whisk in butter."],
     "notes": "Low heat prevents scrambling.",
     "tags": ["dessert", "custard", "egg yolks", "dairy"],
-    "recommendedMethod": "oven",
-    "recommendedReason": "The required listed appliances are not ideal; a gentle oven water bath is the closest controlled option.",
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Gentle stovetop custard",
+      "reason": "This custard is best controlled with gentle stovetop heat and constant stirring. Oven, air fryer, and Blackstone are secondary or unsuitable.",
+      "instructions": ["Warm cream and butter over low heat.", "Temper the egg yolks slowly.", "Stir over low heat until just thickened.", "Strain if needed and chill before serving."]
+    },
     "methods": {
       "oven": { "available": true, "quality": "acceptable", "note": "Use a water bath for gentle heat.", "instructions": ["Heat oven to 150 C.", "Pour custard into ramekins.", "Place ramekins in a tray with hot water.", "Bake for 18 to 25 minutes until just set."] },
       "airFryer": { "available": false, "quality": "notRecommended", "note": "Airflow and direct heat can scramble the custard.", "instructions": [] },
@@ -422,8 +430,12 @@
     "steps": ["Add mascarpone, cream, and salt to a cold bowl.", "Whisk until thick and spoonable."],
     "notes": "No cooking required.",
     "tags": ["dessert", "mascarpone", "cream", "dairy"],
-    "recommendedMethod": "none",
-    "recommendedReason": "No cooking appliance is needed; keep this recipe cold.",
+    "recommendedMethod": {
+      "type": "other",
+      "label": "No-cook chilled preparation",
+      "reason": "This is a cold dairy bowl. It should be mixed and served chilled, not cooked with oven, air fryer, or Blackstone.",
+      "instructions": ["Use a cold bowl.", "Whisk mascarpone, cream, and salt until thick.", "Serve chilled."]
+    },
     "methods": {
       "oven": { "available": false, "quality": "unavailable", "note": "This is a cold recipe and should not be baked.", "instructions": [] },
       "airFryer": { "available": false, "quality": "unavailable", "note": "This is a cold recipe and should not be air fried.", "instructions": [] },

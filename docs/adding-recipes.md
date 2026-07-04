@@ -23,6 +23,8 @@ Each recipe should include a recommended method and instructions for oven, air f
 
 For unavailable or not recommended methods, add a short practical note explaining why.
 
+Use `Other method` in Studio when the true recommendation is outside oven, air fryer, or Blackstone, such as stovetop custard, ice cream maker, or no-cook chilled preparation. Add a clear label, reason, and any method-specific instructions.
+
 ## Images
 
 Put recipe images in `assets/images/recipes/` and set the recipe `image` field to that path. Images are optional.

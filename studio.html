@@ -58,8 +58,10 @@
         <section class="form-section">
           <h2>Recommended method</h2>
           <div class="form-grid">
-            <label><span>Recommended method</span><select id="recommendedMethod" name="recommendedMethod" required><option value="oven">oven</option><option value="airFryer">airFryer</option><option value="blackstone">blackstone</option><option value="none">none</option></select></label>
+            <label><span>Recommended method</span><select id="recommendedMethod" name="recommendedMethod" required><option value="oven">oven</option><option value="airFryer">airFryer</option><option value="blackstone">blackstone</option><option value="other">Other method</option></select></label>
+            <label class="full" data-other-method-field hidden><span>Other method label</span><input id="recommendedMethodLabel" name="recommendedMethodLabel" type="text" placeholder="Stovetop custard + ice cream maker"></label>
             <label class="full"><span>Recommended reason</span><input id="recommendedReason" name="recommendedReason" type="text" required></label>
+            <label class="full" data-other-method-field hidden><span>Recommended method instructions, one per line</span><textarea id="recommendedMethodInstructions" name="recommendedMethodInstructions" rows="4"></textarea></label>
           </div>
         </section>
 

@@ -25,7 +25,7 @@ export function buildFilterOptions(recipes) {
       { label: "Oven", value: "oven" },
       { label: "Air fryer", value: "airFryer" },
       { label: "Blackstone", value: "blackstone" },
-      { label: "No listed appliance", value: "none" }
+      { label: "Other method", value: "other" }
     ],
     strictness: ["strict", "animal-based", "practical"],
     equipment: uniqueSorted(recipes.flatMap((recipe) => recipe.equipment)),
@@ -44,7 +44,7 @@ export function buildFilterOptions(recipes) {
 export function recipeMatchesFilters(recipe, filters, favourites) {
   if (filters.chapter !== ANY && (recipe.chapter || recipe.category) !== filters.chapter) return false;
   if (filters.category !== ANY && recipe.category !== filters.category) return false;
-  if (filters.recommendedMethod !== ANY && (recipe.recommendedMethod || "none") !== filters.recommendedMethod) return false;
+  if (filters.recommendedMethod !== ANY && recommendedMethodKey(recipe) !== filters.recommendedMethod) return false;
   if (filters.strictness !== ANY && recipe.strictness !== filters.strictness) return false;
   if (filters.equipment !== ANY && !recipe.equipment.includes(filters.equipment)) return false;
   if (filters.tags !== ANY && !recipe.tags.includes(filters.tags)) return false;
@@ -53,6 +53,13 @@ export function recipeMatchesFilters(recipe, filters, favourites) {
   if (filters.difficulty !== ANY && recipe.difficulty !== filters.difficulty) return false;
   if (filters.favouritesOnly && !favourites.has(recipe.id)) return false;
   return true;
+}
+
+function recommendedMethodKey(recipe) {
+  const method = recipe.recommendedMethod;
+  if (method && typeof method === "object" && method.type === "other") return "other";
+  if (method === "none") return "other";
+  return method || "other";
 }
 
 export function readFilters(documentRef = document) {

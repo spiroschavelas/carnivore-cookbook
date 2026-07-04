@@ -4,6 +4,11 @@ export function recipeMatchesSearch(recipe, query) {
     return true;
   }
 
+  const recommendedMethod = recipe.recommendedMethod;
+  const recommendedMethodText = recommendedMethod && typeof recommendedMethod === "object"
+    ? [recommendedMethod.type, recommendedMethod.label, recommendedMethod.reason, ...(recommendedMethod.instructions || [])].join(" ")
+    : recommendedMethod;
+
   const haystack = [
     recipe.title,
     recipe.chapter,
@@ -13,7 +18,7 @@ export function recipeMatchesSearch(recipe, query) {
     recipe.dairy,
     recipe.difficulty,
     recipe.notes,
-    recipe.recommendedMethod,
+    recommendedMethodText,
     recipe.recommendedReason,
     ...recipe.ingredients.map((ingredient) => typeof ingredient === "string" ? ingredient : `${ingredient.quantity || ""} ${ingredient.unit || ""} ${ingredient.item || ingredient.original || ""}`),
     ...recipe.steps,

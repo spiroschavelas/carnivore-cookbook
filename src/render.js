@@ -1,8 +1,7 @@
 const METHOD_LABELS = {
   oven: "Oven",
   airFryer: "Air fryer",
-  blackstone: "Blackstone",
-  none: "No appliance recommendation"
+  blackstone: "Blackstone"
 };
 
 const APPLIANCE_METHODS = ["oven", "airFryer", "blackstone"];
@@ -37,7 +36,8 @@ export function renderRecipeDetail(container, recipe, isFavourite) {
     </header>
     <section class="recommended-box">
       <h3>${escapeHtml(recommendationHeading(recipe))}</h3>
-      <p>${escapeHtml(recipe.recommendedReason)}</p>
+      <p>${escapeHtml(recommendedReason(recipe))}</p>
+      ${recommendedInstructionsMarkup(recipe)}
     </section>
     ${recipe.reason_not_strict ? `<p class="notice">Practical note: ${escapeHtml(recipe.reason_not_strict)}</p>` : ""}
     <section class="ingredients-section">
@@ -115,7 +115,7 @@ export function recipeCardMarkup(recipe, isFavourite) {
     </div>
     <p class="card-description">${escapeHtml(recipe.description || "")}</p>
     <p class="card-meta">${formatMeta(recipe)}</p>
-    <p class="method-summary"><strong>Best:</strong> ${escapeHtml(methodLabel(recipe.recommendedMethod || "none"))}</p>
+    <p class="method-summary"><strong>Best:</strong> ${escapeHtml(recommendedLabel(recipe))}</p>
     <p class="method-summary"><strong>Methods:</strong> ${escapeHtml(availableMethods || "None listed")}</p>
     <p class="tag-row">${recipe.tags.slice(0, 4).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</p>
     <button class="text-button" type="button" data-action="view">View recipe</button>
@@ -176,9 +176,27 @@ function initialSelectedMethod(recipe) {
 }
 
 function recommendationHeading(recipe) {
-  return recipe.recommendedMethod === "none"
-    ? "No appliance recommendation"
-    : `Recommended method: ${methodLabel(recipe.recommendedMethod)}`;
+  return `Recommended method: ${recommendedLabel(recipe)}`;
+}
+
+function recommendedLabel(recipe) {
+  const method = recipe.recommendedMethod;
+  if (method && typeof method === "object" && method.type === "other") return method.label || "Other method";
+  if (method === "none") return "No appliance recommendation";
+  return methodLabel(method);
+}
+
+function recommendedReason(recipe) {
+  const method = recipe.recommendedMethod;
+  if (method && typeof method === "object" && method.type === "other") return method.reason || "";
+  return recipe.recommendedReason || "";
+}
+
+function recommendedInstructionsMarkup(recipe) {
+  const method = recipe.recommendedMethod;
+  const instructions = method && typeof method === "object" && method.type === "other" ? method.instructions || [] : [];
+  if (!instructions.length) return "";
+  return `<ol class="recommended-instructions">${instructions.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`;
 }
 
 function isUsableMethod(methodData) {
@@ -216,7 +234,7 @@ function formatEggIngredient(quantity, item) {
 }
 
 function methodLabel(method) {
-  return METHOD_LABELS[method] || method;
+  return METHOD_LABELS[method] || method || "Other method";
 }
 
 export function escapeHtml(value) {
