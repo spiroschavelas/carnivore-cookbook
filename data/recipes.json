@@ -1,0 +1,3973 @@
+[
+  {
+    "id": "blackstone-ribeye-with-beef-tallow",
+    "title": "Blackstone Ribeye with Beef Tallow",
+    "chapter": "Steaks",
+    "category": "steaks",
+    "description": "Fast griddle-seared ribeye with beef tallow.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "36-inch Blackstone",
+      "tongs",
+      "instant-read thermometer"
+    ],
+    "time_minutes": 18,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 1,
+    "servings": 1,
+    "ingredients": [
+      {
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "ribeye steak",
+        "original": "1 piece ribeye steak"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "beef tallow",
+        "original": "15 g beef tallow"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Pat steak dry.",
+      "Salt both sides.",
+      "Rest at room temperature while the griddle heats."
+    ],
+    "notes": "Use the thermometer for consistency. Rest before slicing.",
+    "tags": [
+      "beef",
+      "steak",
+      "blackstone",
+      "strict",
+      "ribeye"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "The Blackstone gives the best crust and enough room to manage hot and cooler zones.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Good for reverse sear, but it needs a hot finish for crust.",
+        "instructions": [
+          "Heat oven to 120 C.",
+          "Cook steak on a rack until nearly done.",
+          "Finish very hot with beef tallow.",
+          "Rest before slicing."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works for convenience, but crust is weaker than griddle searing.",
+        "instructions": [
+          "Preheat COSORI air fryer to 200 C.",
+          "Cook steak for 7 to 10 minutes, turning once.",
+          "Rest for 5 minutes before serving."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best surface contact and crust.",
+        "instructions": [
+          "Heat Blackstone to high.",
+          "Melt beef tallow on the hot zone.",
+          "Sear steak for 3 to 5 minutes per side.",
+          "Move to a cooler zone if the outside browns before the center is ready.",
+          "Rest for 5 minutes."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "crispy-beef-patties",
+    "title": "Crispy Beef Patties",
+    "chapter": "Mince",
+    "category": "mains",
+    "description": "Thin beef patties with crisp browned edges and simple seasoning.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "36-inch Blackstone",
+      "cast iron skillet",
+      "spatula",
+      "instant-read thermometer"
+    ],
+    "time_minutes": 18,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 500,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "500 g ground beef"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "beef tallow",
+        "original": "15 g beef tallow"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Divide the beef into loose balls.",
+      "Salt lightly just before cooking.",
+      "Keep the meat loose so the patties brown instead of steaming."
+    ],
+    "notes": "Best served hot from the griddle. Use higher-fat mince for better browning.",
+    "tags": [
+      "beef",
+      "ground beef",
+      "blackstone",
+      "strict",
+      "mince",
+      "quick"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "The Blackstone gives the best crust and enough surface area for multiple patties.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works for batch cooking, but crust is weaker.",
+        "instructions": [
+          "Heat oven to 220 C.",
+          "Press patties thin on a lined tray.",
+          "Bake for 10 to 14 minutes, turning once.",
+          "Rest for 2 minutes before serving."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for a small clean batch, but less crust than Blackstone.",
+        "instructions": [
+          "Preheat COSORI air fryer to 200 C.",
+          "Place patties in a single layer.",
+          "Cook for 8 to 10 minutes, turning once.",
+          "Rest briefly before serving."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best browning and fat rendering.",
+        "instructions": [
+          "Heat the Blackstone to medium-high.",
+          "Melt beef tallow on the surface.",
+          "Smash beef balls thin with a firm spatula.",
+          "Cook until the edges brown deeply, then flip once.",
+          "Serve immediately."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "soft-scrambled-eggs-with-butter",
+    "title": "Soft Scrambled Eggs with Butter",
+    "chapter": "Eggs",
+    "category": "breakfast",
+    "description": "Soft scrambled eggs cooked gently with butter.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes butter, which is dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "skillet",
+      "spatula",
+      "36-inch Blackstone"
+    ],
+    "time_minutes": 10,
+    "prepTimeMinutes": 3,
+    "difficulty": "easy",
+    "baseServings": 1,
+    "servings": 1,
+    "ingredients": [
+      {
+        "quantity": 3,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "3 eggs"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "butter",
+        "original": "20 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Whisk eggs with salt.",
+      "Cut butter into small pieces.",
+      "Use a cooler zone for soft eggs."
+    ],
+    "notes": "Remove the eggs while still glossy.",
+    "tags": [
+      "eggs",
+      "breakfast",
+      "butter",
+      "dairy",
+      "blackstone",
+      "quick"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "A cooler Blackstone zone works well when cooking eggs alongside other food.",
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Oven heat is too broad for soft scrambled eggs.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Air fryer airflow sets eggs unevenly.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best among the listed appliances if using a cool zone.",
+        "instructions": [
+          "Set one Blackstone zone to low.",
+          "Melt butter gently.",
+          "Add eggs and stir continuously.",
+          "Remove while glossy."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "pork-belly-bites",
+    "title": "Pork Belly Bites",
+    "chapter": "Pork",
+    "category": "mains",
+    "description": "Salted pork belly cubes with crisp edges.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "COSORI air fryer",
+      "oven",
+      "36-inch Blackstone"
+    ],
+    "time_minutes": 35,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 600,
+        "unit": "g",
+        "item": "pork belly",
+        "original": "600 g pork belly"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Cut pork belly into 3 cm cubes.",
+      "Salt on all sides.",
+      "Keep pieces similar size."
+    ],
+    "notes": "Smaller cubes crisp faster.",
+    "tags": [
+      "pork",
+      "air fryer",
+      "strict",
+      "pork belly"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The COSORI air fryer renders fat efficiently and crisps edges without much handling.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Best for a larger batch.",
+        "instructions": [
+          "Heat oven to 210 C.",
+          "Spread pork belly on a rack over a tray.",
+          "Roast for 25 to 35 minutes, turning once."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Best crisping for a small batch.",
+        "instructions": [
+          "Preheat COSORI air fryer to 190 C.",
+          "Cook in a single layer for 25 to 30 minutes.",
+          "Shake basket halfway through.",
+          "Rest for 3 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works, but fat splatter is more active.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Cook cubes on a cooler zone first to render fat.",
+          "Move to hotter zone to crisp all sides."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "salmon-in-butter",
+    "title": "Salmon in Butter",
+    "chapter": "Seafood",
+    "category": "seafood",
+    "description": "Salmon cooked with butter and salt.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes butter, which is dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "COSORI air fryer",
+      "oven",
+      "36-inch Blackstone"
+    ],
+    "time_minutes": 15,
+    "prepTimeMinutes": 3,
+    "difficulty": "easy",
+    "baseServings": 1,
+    "servings": 1,
+    "ingredients": [
+      {
+        "quantity": 180,
+        "unit": "g",
+        "item": "salmon fillet",
+        "original": "180 g salmon fillet"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "butter",
+        "original": "15 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Salt the salmon.",
+      "Cut butter into small pieces.",
+      "Keep the skin side dry if using skin-on salmon."
+    ],
+    "notes": "Keep heat moderate so butter browns without burning.",
+    "tags": [
+      "salmon",
+      "seafood",
+      "butter",
+      "dairy",
+      "air fryer"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The air fryer cooks salmon quickly and evenly with minimal handling.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for multiple fillets.",
+        "instructions": [
+          "Heat oven to 190 C.",
+          "Place salmon in a small dish with butter on top.",
+          "Bake for 10 to 14 minutes."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for speed and clean handling.",
+        "instructions": [
+          "Preheat COSORI air fryer to 180 C.",
+          "Place salmon skin-side down.",
+          "Cook for 7 to 10 minutes.",
+          "Top with butter for the final 2 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works if the surface is clean and lightly greased.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Cook skin-side down until crisp.",
+          "Flip briefly and finish with butter."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "carnivore-flatbread",
+    "title": "Carnivore Flatbread",
+    "chapter": "Breads",
+    "category": "baking",
+    "description": "Flexible egg, cream cheese, and pork rind flatbread.",
+    "strictness": "practical",
+    "reason_not_strict": "Uses dairy and a bread-style format for convenience.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "oven",
+      "COSORI air fryer",
+      "blender"
+    ],
+    "time_minutes": 30,
+    "prepTimeMinutes": 8,
+    "difficulty": "medium",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 3,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "3 eggs"
+      },
+      {
+        "quantity": 80,
+        "unit": "g",
+        "item": "cream cheese",
+        "original": "80 g cream cheese"
+      },
+      {
+        "quantity": 30,
+        "unit": "g",
+        "item": "pork rind crumbs",
+        "original": "30 g pork rind crumbs"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Blend eggs, cream cheese, pork rind crumbs, and salt until smooth.",
+      "Spread thinly on parchment.",
+      "Let the batter settle for 2 minutes."
+    ],
+    "notes": "Let it cool before cutting so it holds together.",
+    "tags": [
+      "flatbread",
+      "eggs",
+      "pork rinds",
+      "dairy",
+      "cream cheese",
+      "oven"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven gives the most even set across a thin sheet.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best even texture.",
+        "instructions": [
+          "Heat oven to 190 C.",
+          "Bake on parchment for 18 to 22 minutes.",
+          "Cool for 5 minutes before cutting."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works only in smaller pieces because of basket size.",
+        "instructions": [
+          "Preheat COSORI air fryer to 175 C.",
+          "Cook small parchment-supported portions for 9 to 12 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "The batter is too loose for a griddle until it sets.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "cottage-cheese-flatbread",
+    "title": "Cottage Cheese Flatbread",
+    "chapter": "Breads",
+    "category": "baking",
+    "description": "Soft dairy-rich flatbread based on cottage cheese and eggs.",
+    "strictness": "practical",
+    "reason_not_strict": "Uses cottage cheese and a bread-style format.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "oven",
+      "blender",
+      "COSORI air fryer"
+    ],
+    "time_minutes": 35,
+    "prepTimeMinutes": 8,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 240,
+        "unit": "g",
+        "item": "cottage cheese",
+        "original": "240 g cottage cheese"
+      },
+      {
+        "quantity": 2,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "2 eggs"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "parmesan",
+        "original": "20 g parmesan"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Blend cottage cheese, eggs, parmesan, and salt until smooth.",
+      "Spread on parchment in a thin rectangle."
+    ],
+    "notes": "This is intentionally dairy-heavy.",
+    "tags": [
+      "flatbread",
+      "cottage cheese",
+      "eggs",
+      "dairy",
+      "oven"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven dries and sets the dairy batter evenly.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best structure.",
+        "instructions": [
+          "Heat oven to 180 C.",
+          "Bake for 30 to 40 minutes until set and browned at the edges.",
+          "Cool before peeling from parchment."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for small portions.",
+        "instructions": [
+          "Preheat COSORI air fryer to 160 C.",
+          "Cook small portions on parchment for 18 to 22 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "The wet dairy batter does not set cleanly on the griddle.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "two-ingredient-carnivore-flatbread",
+    "title": "2-Ingredient Carnivore Flatbread",
+    "chapter": "Breads",
+    "category": "baking",
+    "description": "Simple flatbread made from eggs and cottage cheese or cream cheese.",
+    "strictness": "practical",
+    "reason_not_strict": "Bread-style format for convenience and may use dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "oven",
+      "COSORI air fryer",
+      "blender"
+    ],
+    "time_minutes": 30,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 4,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "4 eggs"
+      },
+      {
+        "quantity": 120,
+        "unit": "g",
+        "item": "cottage cheese or cream cheese",
+        "original": "120 g cottage cheese or cream cheese"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "parmesan",
+        "original": "20 g parmesan"
+      }
+    ],
+    "steps": [
+      "Blend eggs with cottage cheese or cream cheese.",
+      "Add parmesan if using.",
+      "Spread thinly on parchment."
+    ],
+    "notes": "Parmesan is optional but improves structure.",
+    "tags": [
+      "flatbread",
+      "eggs",
+      "pork rinds",
+      "cottage cheese",
+      "cream cheese",
+      "dairy",
+      "air fryer"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven gives the most reliable flat, even result.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Most reliable.",
+        "instructions": [
+          "Heat oven to 180 C.",
+          "Bake for 25 to 35 minutes until set.",
+          "Cool before cutting."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for one smaller flatbread.",
+        "instructions": [
+          "Preheat COSORI air fryer to 160 C.",
+          "Cook on parchment for 12 to 15 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Use a very thin layer and low heat.",
+        "instructions": [
+          "Set Blackstone to low.",
+          "Spread a thin layer on a lightly greased cooler zone.",
+          "Cook until set, then flip carefully."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "carnivore-burger-buns",
+    "title": "3-Ingredient Carnivore-Style Burger Buns",
+    "chapter": "Breads",
+    "category": "baking",
+    "description": "Small carnivore-style buns made with eggs, cream cheese, and pork rind crumbs.",
+    "strictness": "practical",
+    "reason_not_strict": "Uses dairy and a bun-style format.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "oven",
+      "muffin-top pan",
+      "COSORI air fryer"
+    ],
+    "time_minutes": 35,
+    "prepTimeMinutes": 8,
+    "difficulty": "medium",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 4,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "4 eggs"
+      },
+      {
+        "quantity": 90,
+        "unit": "g",
+        "item": "cream cheese",
+        "original": "90 g cream cheese"
+      },
+      {
+        "quantity": 40,
+        "unit": "g",
+        "item": "pork rind crumbs",
+        "original": "40 g pork rind crumbs"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Blend all ingredients until thick.",
+      "Divide into a greased muffin-top pan or silicone moulds.",
+      "Smooth the tops."
+    ],
+    "notes": "Toast cut sides in beef tallow for more structure.",
+    "tags": [
+      "burger",
+      "buns",
+      "eggs",
+      "dairy",
+      "cream cheese",
+      "pork rinds",
+      "oven"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven gives the buns time to set without burning the outside.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best structure.",
+        "instructions": [
+          "Heat oven to 180 C.",
+          "Bake for 20 to 25 minutes.",
+          "Cool before slicing."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works in small silicone moulds.",
+        "instructions": [
+          "Preheat COSORI air fryer to 165 C.",
+          "Cook in small moulds for 10 to 14 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "The batter needs mould support and even surrounding heat.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "air-fryer-meatballs",
+    "title": "Air Fryer Meatballs",
+    "chapter": "Beef",
+    "category": "mains",
+    "description": "Simple beef meatballs cooked quickly in the COSORI air fryer.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes parmesan, which is dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "COSORI air fryer",
+      "oven"
+    ],
+    "time_minutes": 22,
+    "prepTimeMinutes": 8,
+    "difficulty": "easy",
+    "baseServings": 3,
+    "servings": 3,
+    "ingredients": [
+      {
+        "quantity": 600,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "600 g ground beef"
+      },
+      {
+        "quantity": 1,
+        "unit": "eggs",
+        "item": "egg",
+        "original": "1 egg"
+      },
+      {
+        "quantity": 30,
+        "unit": "g",
+        "item": "parmesan",
+        "original": "30 g parmesan"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Mix beef, egg, parmesan, and salt.",
+      "Form 12 meatballs."
+    ],
+    "notes": "Do not pack the meat too tightly.",
+    "tags": [
+      "beef",
+      "meatballs",
+      "air fryer",
+      "dairy"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The COSORI air fryer browns the outside quickly while keeping the batch contained.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for larger batches.",
+        "instructions": [
+          "Heat oven to 210 C.",
+          "Bake meatballs on a tray for 14 to 18 minutes."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Best browning for this size batch.",
+        "instructions": [
+          "Preheat COSORI air fryer to 190 C.",
+          "Cook meatballs in a single layer for 10 to 12 minutes.",
+          "Use reheat at 180 C for 3 to 4 minutes for leftovers."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works if flattened slightly; round meatballs roll.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Flatten meatballs slightly.",
+          "Cook on all sides until browned and cooked through."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "carnivore-vanilla-ice-cream",
+    "title": "Carnivore Vanilla Ice Cream",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Cream and egg yolk ice cream with vanilla.",
+    "strictness": "practical",
+    "reason_not_strict": "Includes heavy dairy and vanilla.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "saucepan",
+      "ice cream maker",
+      "whisk"
+    ],
+    "time_minutes": 45,
+    "prepTimeMinutes": 15,
+    "difficulty": "medium",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 400,
+        "unit": "ml",
+        "item": "cream",
+        "original": "400 ml cream"
+      },
+      {
+        "quantity": 5,
+        "unit": "eggs",
+        "item": "egg yolks",
+        "original": "5 egg yolks"
+      },
+      {
+        "quantity": 1,
+        "unit": "tsp",
+        "item": "vanilla extract",
+        "original": "1 tsp vanilla extract"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Warm cream and salt gently.",
+      "Temper egg yolks with warm cream.",
+      "Cook over low heat until lightly thickened.",
+      "Chill fully before churning."
+    ],
+    "notes": "This is unsweetened. Keep heat gentle to avoid scrambling the yolks.",
+    "tags": [
+      "dessert",
+      "cream",
+      "egg yolks",
+      "dairy",
+      "ice cream"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop custard + ice cream maker",
+      "reason": "This recipe needs gentle custard cooking and churning. Oven, air fryer, and Blackstone are not suitable.",
+      "instructions": [
+        "Make a gentle stovetop custard.",
+        "Chill until fully cold.",
+        "Churn in an ice cream maker.",
+        "Freeze until scoopable."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Oven heat is not suitable for churning ice cream.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Air fryer heat is not suitable for custard or ice cream.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "A griddle is not suitable for custard or ice cream.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "egg-yolk-custard",
+    "title": "Egg Yolk Custard",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Small custard made with egg yolks, cream, and butter.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cream and butter, which are dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "saucepan",
+      "whisk",
+      "ramekins"
+    ],
+    "time_minutes": 25,
+    "prepTimeMinutes": 5,
+    "difficulty": "medium",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 5,
+        "unit": "eggs",
+        "item": "egg yolks",
+        "original": "5 egg yolks"
+      },
+      {
+        "quantity": 120,
+        "unit": "ml",
+        "item": "cream",
+        "original": "120 ml cream"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "butter",
+        "original": "15 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Whisk yolks with salt.",
+      "Warm cream gently.",
+      "Temper yolks with warm cream.",
+      "Cook gently until thickened.",
+      "Whisk in butter."
+    ],
+    "notes": "Low heat is the main control point.",
+    "tags": [
+      "dessert",
+      "custard",
+      "egg yolks",
+      "dairy",
+      "cream",
+      "butter"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Gentle stovetop custard",
+      "reason": "Direct stovetop control is better than the three listed appliances for this custard.",
+      "instructions": [
+        "Warm cream gently.",
+        "Temper yolks.",
+        "Cook over low heat while whisking.",
+        "Remove from heat and whisk in butter."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works as a water bath custard if you prefer oven control.",
+        "instructions": [
+          "Heat oven to 150 C.",
+          "Pour custard into ramekins.",
+          "Place ramekins in a tray with hot water.",
+          "Bake until just set."
+        ]
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Airflow and direct heat can scramble the custard.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Griddle heat is too direct for custard.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "mascarpone-cream-bowl",
+    "title": "Mascarpone Cream Bowl",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Quick cold dairy bowl with mascarpone and cream.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes heavy dairy.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "mixing bowl",
+      "whisk"
+    ],
+    "time_minutes": 5,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 200,
+        "unit": "g",
+        "item": "mascarpone",
+        "original": "200 g mascarpone"
+      },
+      {
+        "quantity": 80,
+        "unit": "ml",
+        "item": "cream",
+        "original": "80 ml cream"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Whisk mascarpone until smooth.",
+      "Whisk in cream and salt.",
+      "Chill briefly if you want a firmer texture."
+    ],
+    "notes": "No cooking needed.",
+    "tags": [
+      "dessert",
+      "mascarpone",
+      "cream",
+      "dairy",
+      "no cook",
+      "quick"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "No-cook chilled preparation",
+      "reason": "This dessert is best mixed cold and chilled. Oven, air fryer, and Blackstone do not apply.",
+      "instructions": [
+        "Whisk mascarpone, cream, and salt until smooth.",
+        "Chill if desired.",
+        "Serve cold."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Oven heat does not apply to this no-cook dessert.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Air fryer heat does not apply to this no-cook dessert.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "A griddle does not apply to this no-cook dessert.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "air-fryer-beef-meatballs",
+    "title": "Air Fryer Beef Meatballs",
+    "chapter": "Mince",
+    "category": "mains",
+    "description": "Simple beef meatballs for the COSORI air fryer.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "COSORI air fryer",
+      "mixing bowl"
+    ],
+    "time_minutes": 20,
+    "prepTimeMinutes": 8,
+    "difficulty": "easy",
+    "baseServings": 3,
+    "servings": 3,
+    "ingredients": [
+      {
+        "quantity": 600,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "600 g ground beef"
+      },
+      {
+        "quantity": 1,
+        "unit": "eggs",
+        "item": "egg",
+        "original": "1 egg"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Mix beef, egg, and salt gently.",
+      "Form 12 even meatballs.",
+      "Chill for 5 minutes if the mixture feels loose."
+    ],
+    "notes": "Do not pack the meat too tightly or the texture becomes dense.",
+    "tags": [
+      "beef",
+      "ground beef",
+      "mince",
+      "meatballs",
+      "air fryer",
+      "strict"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The air fryer browns the outside while keeping the batch contained and easy to clean.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for larger batches.",
+        "instructions": [
+          "Heat oven to 210 C.",
+          "Place meatballs on a lined tray.",
+          "Bake for 14 to 18 minutes until done.",
+          "Rest for 3 minutes."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Best balance of browning and convenience.",
+        "instructions": [
+          "Preheat COSORI air fryer to 190 C.",
+          "Cook meatballs in a single layer for 10 to 12 minutes.",
+          "Shake or turn once if needed.",
+          "Rest for 3 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works if flattened slightly. Round meatballs can roll.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Flatten meatballs slightly.",
+          "Cook on several sides until browned and done.",
+          "Move to a cooler zone if browning too fast."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "beef-and-pork-parmesan-meatballs",
+    "title": "Beef and Pork Parmesan Meatballs",
+    "chapter": "Mince",
+    "category": "mains",
+    "description": "Tender mixed meatballs with parmesan for a dairy-friendly version.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes parmesan, which is dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "COSORI air fryer",
+      "oven",
+      "mixing bowl"
+    ],
+    "time_minutes": 24,
+    "prepTimeMinutes": 10,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 400,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "400 g ground beef"
+      },
+      {
+        "quantity": 300,
+        "unit": "g",
+        "item": "ground pork",
+        "original": "300 g ground pork"
+      },
+      {
+        "quantity": 40,
+        "unit": "g",
+        "item": "parmesan",
+        "original": "40 g parmesan"
+      },
+      {
+        "quantity": 1,
+        "unit": "eggs",
+        "item": "egg",
+        "original": "1 egg"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Mix beef, pork, parmesan, egg, and salt.",
+      "Form 16 meatballs.",
+      "Rest for 5 minutes before cooking so they hold shape."
+    ],
+    "notes": "Parmesan adds salt, so season carefully.",
+    "tags": [
+      "beef",
+      "pork",
+      "mince",
+      "meatballs",
+      "parmesan",
+      "dairy",
+      "air fryer"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The air fryer gives fast browning and keeps the cheese from making a mess on a flat surface.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for a full tray.",
+        "instructions": [
+          "Heat oven to 210 C.",
+          "Bake meatballs on a lined tray for 16 to 20 minutes.",
+          "Rest for 3 minutes before serving."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for browning and easy cleanup.",
+        "instructions": [
+          "Preheat COSORI air fryer to 190 C.",
+          "Cook in a single layer for 11 to 14 minutes.",
+          "Turn once if needed.",
+          "Rest briefly before serving."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works if shaped as small patties instead of balls.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Flatten each meatball slightly.",
+          "Cook until browned on both sides and done in the center."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "carnivore-smash-burger-bowl",
+    "title": "Carnivore Smash Burger Bowl",
+    "chapter": "Mince",
+    "category": "mains",
+    "description": "Smash burger pieces served with egg, bacon, and cheese in a bowl.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cheese and optional dairy toppings.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "36-inch Blackstone",
+      "spatula"
+    ],
+    "time_minutes": 25,
+    "prepTimeMinutes": 10,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 500,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "500 g ground beef"
+      },
+      {
+        "quantity": 80,
+        "unit": "g",
+        "item": "cheddar",
+        "original": "80 g cheddar"
+      },
+      {
+        "quantity": 2,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "2 eggs"
+      },
+      {
+        "quantity": 80,
+        "unit": "g",
+        "item": "bacon",
+        "original": "80 g bacon"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Cut bacon into pieces.",
+      "Divide beef into loose balls.",
+      "Prepare bowls before cooking so everything can be served hot."
+    ],
+    "notes": "Good when you want burger flavour without buns.",
+    "tags": [
+      "beef",
+      "ground beef",
+      "mince",
+      "burger",
+      "blackstone",
+      "eggs",
+      "cheese",
+      "dairy"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "The Blackstone can cook beef, bacon, and eggs in separate zones at the same time.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works as a tray bake, but the burger crust is weaker.",
+        "instructions": [
+          "Heat oven to 220 C.",
+          "Bake bacon and flattened beef portions on a tray.",
+          "Add cheese near the end.",
+          "Cook eggs separately or bake in a small dish."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works in stages, but capacity is limited.",
+        "instructions": [
+          "Cook bacon in the air fryer at 190 C until crisp.",
+          "Cook beef patties at 200 C for 8 to 10 minutes.",
+          "Top with cheese and serve with cooked eggs."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for batch cooking and crust.",
+        "instructions": [
+          "Heat Blackstone to medium-high.",
+          "Cook bacon pieces until crisp and move to a cooler area.",
+          "Smash beef balls thin and brown deeply.",
+          "Add cheese to melt.",
+          "Cook eggs on a cooler zone and assemble bowls."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "minced-beef-and-egg-skillet",
+    "title": "Minced Beef and Egg Skillet",
+    "chapter": "Mince",
+    "category": "breakfast",
+    "description": "Fast beef mince and eggs for a simple filling meal.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "36-inch Blackstone",
+      "spatula"
+    ],
+    "time_minutes": 15,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 350,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "350 g ground beef"
+      },
+      {
+        "quantity": 4,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "4 eggs"
+      },
+      {
+        "quantity": 10,
+        "unit": "g",
+        "item": "beef tallow",
+        "original": "10 g beef tallow"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Break the beef apart loosely.",
+      "Whisk eggs with salt.",
+      "Keep eggs ready before the beef finishes."
+    ],
+    "notes": "Cook the eggs gently so they stay soft.",
+    "tags": [
+      "beef",
+      "ground beef",
+      "mince",
+      "eggs",
+      "blackstone",
+      "quick",
+      "strict"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "The Blackstone gives enough space to brown the beef and finish the eggs gently on a cooler zone.",
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Oven heat is too broad for soft eggs and loose mince.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works, but texture is drier.",
+        "instructions": [
+          "Cook beef in an air fryer-safe dish at 190 C for 7 to 9 minutes, stirring once.",
+          "Add whisked eggs and cook 3 to 5 minutes more until just set."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for speed and control.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Melt beef tallow.",
+          "Brown the beef and salt it.",
+          "Move beef aside and lower one zone.",
+          "Add eggs and stir gently into the beef."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "oven-carnivore-meatloaf",
+    "title": "Oven Carnivore Meatloaf",
+    "chapter": "Mince",
+    "category": "mains",
+    "description": "Simple meatloaf made from beef, pork, egg, and parmesan.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes parmesan, which is dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "oven",
+      "loaf tin"
+    ],
+    "time_minutes": 55,
+    "prepTimeMinutes": 12,
+    "difficulty": "easy",
+    "baseServings": 6,
+    "servings": 6,
+    "ingredients": [
+      {
+        "quantity": 700,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "700 g ground beef"
+      },
+      {
+        "quantity": 300,
+        "unit": "g",
+        "item": "ground pork",
+        "original": "300 g ground pork"
+      },
+      {
+        "quantity": 2,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "2 eggs"
+      },
+      {
+        "quantity": 60,
+        "unit": "g",
+        "item": "parmesan",
+        "original": "60 g parmesan"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Mix all ingredients gently.",
+      "Shape into a loaf or press into a loaf tin.",
+      "Rest for 5 minutes before baking."
+    ],
+    "notes": "Good for leftovers. Slice after resting so it holds together.",
+    "tags": [
+      "beef",
+      "pork",
+      "mince",
+      "meatloaf",
+      "oven",
+      "dairy",
+      "family"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven cooks the loaf evenly and keeps the shape stable.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best structure and even cooking.",
+        "instructions": [
+          "Heat oven to 190 C.",
+          "Bake the loaf for 40 to 50 minutes until done.",
+          "Rest for 10 minutes before slicing."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works only as smaller mini loaves.",
+        "instructions": [
+          "Shape into small loaves that fit the basket.",
+          "Cook at 180 C for 18 to 25 minutes.",
+          "Rest before slicing."
+        ]
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "A full meatloaf is too thick for a griddle. Use patties instead.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "cheese-stuffed-beef-patties",
+    "title": "Cheese-Stuffed Beef Patties",
+    "chapter": "Mince",
+    "category": "mains",
+    "description": "Beef patties filled with melting cheese.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cheese, which is dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "36-inch Blackstone",
+      "spatula"
+    ],
+    "time_minutes": 22,
+    "prepTimeMinutes": 10,
+    "difficulty": "easy",
+    "baseServings": 3,
+    "servings": 3,
+    "ingredients": [
+      {
+        "quantity": 600,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "600 g ground beef"
+      },
+      {
+        "quantity": 120,
+        "unit": "g",
+        "item": "mozzarella",
+        "original": "120 g mozzarella"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "beef tallow",
+        "original": "15 g beef tallow"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Divide beef into 6 thin rounds.",
+      "Place cheese in the center of 3 rounds.",
+      "Cover with remaining rounds and seal edges well.",
+      "Salt just before cooking."
+    ],
+    "notes": "Seal the edges carefully or cheese will leak.",
+    "tags": [
+      "beef",
+      "ground beef",
+      "mince",
+      "cheese",
+      "dairy",
+      "blackstone"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "The Blackstone gives good crust while letting you control leaking cheese quickly.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for less handling.",
+        "instructions": [
+          "Heat oven to 210 C.",
+          "Bake stuffed patties on a lined tray for 14 to 18 minutes.",
+          "Rest before cutting."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works, but leaking cheese can stick.",
+        "instructions": [
+          "Preheat COSORI air fryer to 190 C.",
+          "Cook patties for 9 to 12 minutes in a single layer.",
+          "Use parchment if needed."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best crust and control.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Melt beef tallow.",
+          "Cook patties until browned on the first side.",
+          "Flip carefully once.",
+          "Move to cooler zone if cheese starts leaking."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "beef-mince-breakfast-scramble",
+    "title": "Beef Mince Breakfast Scramble",
+    "chapter": "Mince",
+    "category": "breakfast",
+    "description": "Ground beef, eggs, butter, and cheese for a fast breakfast.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes butter and cheese, which are dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "36-inch Blackstone",
+      "spatula"
+    ],
+    "time_minutes": 15,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 300,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "300 g ground beef"
+      },
+      {
+        "quantity": 3,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "3 eggs"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "butter",
+        "original": "20 g butter"
+      },
+      {
+        "quantity": 50,
+        "unit": "g",
+        "item": "cheddar",
+        "original": "50 g cheddar"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Brown the beef first.",
+      "Whisk eggs with salt.",
+      "Grate or chop the cheese."
+    ],
+    "notes": "Keep the heat moderate after adding eggs.",
+    "tags": [
+      "beef",
+      "mince",
+      "eggs",
+      "breakfast",
+      "cheese",
+      "dairy",
+      "quick"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "The Blackstone handles the beef and eggs quickly with separate heat zones.",
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Oven cooking makes the scramble dry.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works in a dish but gives less control.",
+        "instructions": [
+          "Cook beef in an air fryer-safe dish at 190 C for 6 to 8 minutes, stirring once.",
+          "Add eggs and cheese.",
+          "Cook 3 to 5 minutes more until set."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for speed and texture.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Brown the beef.",
+          "Lower one zone and melt butter.",
+          "Add eggs and stir gently.",
+          "Fold in cheese and serve when just set."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "air-fryer-kofta-style-beef-logs",
+    "title": "Air Fryer Kofta-Style Beef Logs",
+    "chapter": "Mince",
+    "category": "mains",
+    "description": "Beef mince shaped into logs for fast air fryer cooking.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "COSORI air fryer",
+      "mixing bowl"
+    ],
+    "time_minutes": 18,
+    "prepTimeMinutes": 8,
+    "difficulty": "easy",
+    "baseServings": 3,
+    "servings": 3,
+    "ingredients": [
+      {
+        "quantity": 600,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "600 g ground beef"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "beef tallow",
+        "original": "15 g beef tallow"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Mix beef and salt gently.",
+      "Shape into 8 short logs.",
+      "Brush or rub lightly with beef tallow."
+    ],
+    "notes": "Make the logs similar thickness so they cook evenly.",
+    "tags": [
+      "beef",
+      "ground beef",
+      "mince",
+      "air fryer",
+      "strict",
+      "quick"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The air fryer cooks the logs evenly with minimal handling.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for a larger batch.",
+        "instructions": [
+          "Heat oven to 210 C.",
+          "Place logs on a lined tray.",
+          "Bake for 12 to 16 minutes, turning once."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Best convenience and shape retention.",
+        "instructions": [
+          "Preheat COSORI air fryer to 190 C.",
+          "Cook logs in a single layer for 9 to 12 minutes.",
+          "Turn once if needed.",
+          "Rest for 3 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "good",
+        "note": "Good crust if handled carefully.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Cook logs on all sides until browned.",
+          "Move to a cooler zone if browning too quickly."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "pork-and-beef-burger-bites",
+    "title": "Pork and Beef Burger Bites",
+    "chapter": "Mince",
+    "category": "family",
+    "description": "Small beef and pork bites for easy portions and leftovers.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "COSORI air fryer",
+      "oven"
+    ],
+    "time_minutes": 22,
+    "prepTimeMinutes": 10,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 400,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "400 g ground beef"
+      },
+      {
+        "quantity": 400,
+        "unit": "g",
+        "item": "ground pork",
+        "original": "400 g ground pork"
+      },
+      {
+        "quantity": 1,
+        "unit": "eggs",
+        "item": "egg",
+        "original": "1 egg"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Mix meats, egg, and salt.",
+      "Shape into small bite-size patties.",
+      "Keep thickness consistent."
+    ],
+    "notes": "Useful for children because portions are small and easy to reheat.",
+    "tags": [
+      "beef",
+      "pork",
+      "mince",
+      "air fryer",
+      "family",
+      "strict"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The air fryer cooks small bites quickly and makes reheating easy.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for batch cooking.",
+        "instructions": [
+          "Heat oven to 210 C.",
+          "Bake bites on a lined tray for 12 to 16 minutes.",
+          "Turn once if needed."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for small bites.",
+        "instructions": [
+          "Preheat COSORI air fryer to 190 C.",
+          "Cook in a single layer for 8 to 11 minutes.",
+          "Shake basket once.",
+          "Rest briefly."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "good",
+        "note": "Good if you want stronger crust.",
+        "instructions": [
+          "Heat Blackstone to medium-high.",
+          "Cook bites in batches.",
+          "Flip once when the first side is browned."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "carnivore-mince-pizza-base",
+    "title": "Carnivore Mince Pizza Base",
+    "chapter": "Mince",
+    "category": "baking",
+    "description": "A thin beef mince base topped with cheese.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Uses a pizza-style format and cheese.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "oven",
+      "baking tray"
+    ],
+    "time_minutes": 35,
+    "prepTimeMinutes": 12,
+    "difficulty": "medium",
+    "baseServings": 3,
+    "servings": 3,
+    "ingredients": [
+      {
+        "quantity": 600,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "600 g ground beef"
+      },
+      {
+        "quantity": 1,
+        "unit": "eggs",
+        "item": "egg",
+        "original": "1 egg"
+      },
+      {
+        "quantity": 80,
+        "unit": "g",
+        "item": "mozzarella",
+        "original": "80 g mozzarella"
+      },
+      {
+        "quantity": 30,
+        "unit": "g",
+        "item": "parmesan",
+        "original": "30 g parmesan"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Mix beef, egg, parmesan, and salt.",
+      "Press very thinly onto parchment.",
+      "Prepare mozzarella for topping."
+    ],
+    "notes": "Keep the base thin. A thick base behaves more like meatloaf.",
+    "tags": [
+      "beef",
+      "mince",
+      "pizza",
+      "oven",
+      "cheese",
+      "dairy"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven sets the mince base evenly and melts the cheese without needing to flip it.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best structure.",
+        "instructions": [
+          "Heat oven to 220 C.",
+          "Bake the mince base for 12 to 15 minutes.",
+          "Drain excess fat if needed.",
+          "Add mozzarella and return to oven for 5 to 8 minutes."
+        ]
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Basket size and airflow make a full pizza base awkward.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works as smaller griddle rounds, not as one full base.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Cook small thin mince rounds until set.",
+          "Flip carefully.",
+          "Add cheese and cover briefly to melt."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "creamy-beef-mince-bowl",
+    "title": "Creamy Beef Mince Bowl",
+    "chapter": "Mince",
+    "category": "mains",
+    "description": "Ground beef finished with cream cheese and butter.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cream cheese and butter, which are dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "stovetop pan",
+      "36-inch Blackstone"
+    ],
+    "time_minutes": 18,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 400,
+        "unit": "g",
+        "item": "ground beef",
+        "original": "400 g ground beef"
+      },
+      {
+        "quantity": 60,
+        "unit": "g",
+        "item": "cream cheese",
+        "original": "60 g cream cheese"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "butter",
+        "original": "20 g butter"
+      },
+      {
+        "quantity": 30,
+        "unit": "ml",
+        "item": "cream",
+        "original": "30 ml cream"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Brown the beef.",
+      "Keep dairy ready so it can melt into the hot beef.",
+      "Use low heat after adding dairy."
+    ],
+    "notes": "This is best finished in a pan because dairy can split over high heat.",
+    "tags": [
+      "beef",
+      "mince",
+      "cream cheese",
+      "cream",
+      "dairy",
+      "quick"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop pan",
+      "reason": "A pan gives better control when melting cream cheese and cream into browned beef.",
+      "instructions": [
+        "Brown beef in a pan over medium-high heat.",
+        "Lower heat.",
+        "Add butter, cream cheese, and cream.",
+        "Stir until creamy and serve hot."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Can be turned into a baked bowl, but it is less creamy.",
+        "instructions": [
+          "Heat oven to 190 C.",
+          "Brown beef first if possible.",
+          "Mix with dairy in a small dish.",
+          "Bake until hot and lightly browned on top."
+        ]
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Air fryer heat can dry the beef and split the dairy.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Good for browning the beef, but finish the cream sauce in a pan.",
+        "instructions": [
+          "Brown beef on the Blackstone.",
+          "Move beef to a pan or bowl.",
+          "Stir in butter, cream cheese, and cream while hot."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "chocolate-style-carnivore-ice-cream",
+    "title": "Chocolate-Style Carnivore Ice Cream",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Creamy chocolate-style ice cream using cocoa as a practical flavour option.",
+    "strictness": "practical",
+    "reason_not_strict": "Includes dairy, vanilla, and cocoa, so it is not strict carnivore.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "saucepan",
+      "whisk",
+      "ice cream maker"
+    ],
+    "time_minutes": 45,
+    "prepTimeMinutes": 15,
+    "difficulty": "medium",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 400,
+        "unit": "ml",
+        "item": "cream",
+        "original": "400 ml cream"
+      },
+      {
+        "quantity": 5,
+        "unit": "eggs",
+        "item": "egg yolks",
+        "original": "5 egg yolks"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "cocoa powder",
+        "original": "15 g cocoa powder"
+      },
+      {
+        "quantity": 1,
+        "unit": "tsp",
+        "item": "vanilla extract",
+        "original": "1 tsp vanilla extract"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Whisk cocoa into warm cream until smooth.",
+      "Temper egg yolks with the warm cream.",
+      "Cook gently until lightly thickened.",
+      "Chill fully before churning."
+    ],
+    "notes": "Use only if cocoa fits your version of the cookbook.",
+    "tags": [
+      "dessert",
+      "ice cream",
+      "cream",
+      "egg yolks",
+      "cocoa",
+      "dairy",
+      "practical"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop custard + ice cream maker",
+      "reason": "The cocoa needs to dissolve into a custard base before churning.",
+      "instructions": [
+        "Warm cream with cocoa and salt.",
+        "Temper yolks.",
+        "Cook gently until lightly thickened.",
+        "Chill and churn."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Oven heat is not suitable for churning ice cream.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Air fryer heat is not suitable for custard or ice cream.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "A griddle is not suitable for custard or ice cream.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "coffee-cream-ice-cream",
+    "title": "Coffee Cream Ice Cream",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Coffee-flavoured dairy ice cream with cream and egg yolks.",
+    "strictness": "practical",
+    "reason_not_strict": "Includes dairy, coffee, and optional vanilla.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "saucepan",
+      "whisk",
+      "ice cream maker"
+    ],
+    "time_minutes": 45,
+    "prepTimeMinutes": 15,
+    "difficulty": "medium",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 400,
+        "unit": "ml",
+        "item": "cream",
+        "original": "400 ml cream"
+      },
+      {
+        "quantity": 5,
+        "unit": "eggs",
+        "item": "egg yolks",
+        "original": "5 egg yolks"
+      },
+      {
+        "quantity": 60,
+        "unit": "ml",
+        "item": "strong coffee",
+        "original": "60 ml strong coffee"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Warm cream and coffee together.",
+      "Temper yolks with the warm liquid.",
+      "Cook gently until lightly thickened.",
+      "Chill fully before churning."
+    ],
+    "notes": "Reduce the coffee first if you want a stronger flavour without adding too much liquid.",
+    "tags": [
+      "dessert",
+      "ice cream",
+      "coffee",
+      "cream",
+      "egg yolks",
+      "dairy"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop custard + ice cream maker",
+      "reason": "Coffee ice cream needs a chilled custard base and churning.",
+      "instructions": [
+        "Warm cream and coffee.",
+        "Temper yolks.",
+        "Cook gently until lightly thickened.",
+        "Chill and churn."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Oven heat is not suitable for churning ice cream.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Air fryer heat is not suitable for custard or ice cream.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "A griddle is not suitable for custard or ice cream.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "mascarpone-ice-cream",
+    "title": "Mascarpone Ice Cream",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Dense dairy-rich ice cream with mascarpone and cream.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes heavy dairy.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "mixing bowl",
+      "ice cream maker"
+    ],
+    "time_minutes": 35,
+    "prepTimeMinutes": 10,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 250,
+        "unit": "g",
+        "item": "mascarpone",
+        "original": "250 g mascarpone"
+      },
+      {
+        "quantity": 250,
+        "unit": "ml",
+        "item": "cream",
+        "original": "250 ml cream"
+      },
+      {
+        "quantity": 3,
+        "unit": "eggs",
+        "item": "egg yolks",
+        "original": "3 egg yolks"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Whisk mascarpone until smooth.",
+      "Whisk in cream, yolks, and salt.",
+      "Chill fully before churning."
+    ],
+    "notes": "A no-cook version is richer and denser. Use fresh eggs you are comfortable using.",
+    "tags": [
+      "dessert",
+      "ice cream",
+      "mascarpone",
+      "cream",
+      "dairy"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "No-cook chilled mix + ice cream maker",
+      "reason": "Mascarpone works well as a cold mix and does not need oven, air fryer, or Blackstone cooking.",
+      "instructions": [
+        "Whisk ingredients until smooth.",
+        "Chill fully.",
+        "Churn in an ice cream maker.",
+        "Freeze until scoopable."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Oven heat is not suitable for this cold churned dessert.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Air fryer heat is not suitable for this cold churned dessert.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "A griddle is not suitable for this cold churned dessert.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "salted-butter-ice-cream",
+    "title": "Salted Butter Ice Cream",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Creamy ice cream with butter and egg yolk custard.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes heavy dairy.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "saucepan",
+      "whisk",
+      "ice cream maker"
+    ],
+    "time_minutes": 50,
+    "prepTimeMinutes": 15,
+    "difficulty": "medium",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 350,
+        "unit": "ml",
+        "item": "cream",
+        "original": "350 ml cream"
+      },
+      {
+        "quantity": 60,
+        "unit": "g",
+        "item": "butter",
+        "original": "60 g butter"
+      },
+      {
+        "quantity": 5,
+        "unit": "eggs",
+        "item": "egg yolks",
+        "original": "5 egg yolks"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Melt butter gently into the cream.",
+      "Temper egg yolks with the warm cream.",
+      "Cook gently until lightly thickened.",
+      "Chill fully before churning."
+    ],
+    "notes": "Use moderate heat so the butter emulsifies instead of separating.",
+    "tags": [
+      "dessert",
+      "ice cream",
+      "butter",
+      "cream",
+      "egg yolks",
+      "dairy"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop custard + ice cream maker",
+      "reason": "The butter needs to emulsify into a gentle custard before churning.",
+      "instructions": [
+        "Melt butter into warm cream.",
+        "Temper yolks.",
+        "Cook gently until lightly thickened.",
+        "Chill and churn."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Oven heat is not suitable for churning ice cream.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Air fryer heat is not suitable for custard or ice cream.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "A griddle is not suitable for custard or ice cream.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "whipped-cream-cheese-bowl",
+    "title": "Whipped Cream Cheese Bowl",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Whipped cream cheese and cream for a fast dairy dessert.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes heavy dairy.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "mixing bowl",
+      "whisk"
+    ],
+    "time_minutes": 8,
+    "prepTimeMinutes": 8,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 150,
+        "unit": "g",
+        "item": "cream cheese",
+        "original": "150 g cream cheese"
+      },
+      {
+        "quantity": 120,
+        "unit": "ml",
+        "item": "cream",
+        "original": "120 ml cream"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Soften cream cheese.",
+      "Whisk cream cheese until smooth.",
+      "Add cream slowly and whisk until thick."
+    ],
+    "notes": "Use cold cream for better thickening.",
+    "tags": [
+      "dessert",
+      "cream cheese",
+      "cream",
+      "dairy",
+      "no cook",
+      "quick"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "No-cook whipped preparation",
+      "reason": "This is a cold whipped dessert and should not be cooked.",
+      "instructions": [
+        "Whip softened cream cheese.",
+        "Add cold cream gradually.",
+        "Whip until thick and serve chilled."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Oven heat does not apply to this no-cook dessert.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Air fryer heat does not apply to this no-cook dessert.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "A griddle does not apply to this no-cook dessert.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "frozen-yogurt-style-carnivore-bowl",
+    "title": "Frozen Yogurt-Style Carnivore Bowl",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Frozen Greek yogurt and cream bowl for a tangier dairy dessert.",
+    "strictness": "practical",
+    "reason_not_strict": "Includes yogurt and a dessert-style format.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "freezer",
+      "mixing bowl"
+    ],
+    "time_minutes": 125,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 250,
+        "unit": "g",
+        "item": "Greek yogurt",
+        "original": "250 g Greek yogurt"
+      },
+      {
+        "quantity": 100,
+        "unit": "ml",
+        "item": "cream",
+        "original": "100 ml cream"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Whisk yogurt, cream, and salt.",
+      "Freeze in a shallow container.",
+      "Stir once or twice during freezing if possible."
+    ],
+    "notes": "Use only if Greek yogurt fits your version of the cookbook.",
+    "tags": [
+      "dessert",
+      "frozen",
+      "yogurt",
+      "cream",
+      "dairy",
+      "practical"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Freezer set",
+      "reason": "This dessert is mixed cold and frozen, not cooked with the listed appliances.",
+      "instructions": [
+        "Whisk the mixture smooth.",
+        "Freeze until firm but scoopable.",
+        "Rest briefly before serving if too hard."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Oven heat does not apply to this frozen dessert.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Air fryer heat does not apply to this frozen dessert.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "A griddle does not apply to this frozen dessert.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "cream-cheese-egg-pudding",
+    "title": "Cream Cheese Egg Pudding",
+    "chapter": "Desserts",
+    "category": "desserts",
+    "description": "Baked egg and cream cheese pudding.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cream cheese and cream, which are dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "oven",
+      "blender",
+      "ramekins"
+    ],
+    "time_minutes": 35,
+    "prepTimeMinutes": 8,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 4,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "4 eggs"
+      },
+      {
+        "quantity": 150,
+        "unit": "g",
+        "item": "cream cheese",
+        "original": "150 g cream cheese"
+      },
+      {
+        "quantity": 100,
+        "unit": "ml",
+        "item": "cream",
+        "original": "100 ml cream"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Blend eggs, cream cheese, cream, and salt until smooth.",
+      "Pour into ramekins.",
+      "Let bubbles settle before baking."
+    ],
+    "notes": "A water bath gives a smoother texture.",
+    "tags": [
+      "dessert",
+      "pudding",
+      "eggs",
+      "cream cheese",
+      "dairy",
+      "oven"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven gives gentle even heat and a stable pudding texture.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best even set.",
+        "instructions": [
+          "Heat oven to 150 C.",
+          "Place ramekins in a tray with hot water.",
+          "Bake for 22 to 30 minutes until just set.",
+          "Cool before serving."
+        ]
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Airflow and direct heat can make the texture rubbery.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "A griddle is not suitable for a baked pudding.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "air-fryer-egg-bites-with-cheese",
+    "title": "Air Fryer Egg Bites with Cheese",
+    "chapter": "Eggs",
+    "category": "breakfast",
+    "description": "Small egg and cheese bites for batch cooking.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cheese and cream, which are dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "COSORI air fryer",
+      "silicone moulds"
+    ],
+    "time_minutes": 22,
+    "prepTimeMinutes": 8,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 6,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "6 eggs"
+      },
+      {
+        "quantity": 80,
+        "unit": "g",
+        "item": "cheddar",
+        "original": "80 g cheddar"
+      },
+      {
+        "quantity": 60,
+        "unit": "ml",
+        "item": "cream",
+        "original": "60 ml cream"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Whisk eggs, cream, and salt.",
+      "Stir in cheese.",
+      "Pour into silicone moulds."
+    ],
+    "notes": "Do not overfill moulds because eggs expand.",
+    "tags": [
+      "eggs",
+      "cheese",
+      "cream",
+      "dairy",
+      "air fryer",
+      "batch"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The air fryer is convenient for small moulded egg bites.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good if making a larger batch.",
+        "instructions": [
+          "Heat oven to 170 C.",
+          "Bake in silicone moulds or muffin tin for 14 to 18 minutes.",
+          "Cool briefly before removing."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for small batches.",
+        "instructions": [
+          "Preheat COSORI air fryer to 160 C.",
+          "Cook moulds for 10 to 14 minutes until set.",
+          "Rest 3 minutes before removing."
+        ]
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "Loose egg mixture needs mould support and even surrounding heat.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "carnivore-omelette-with-cheese",
+    "title": "Carnivore Omelette with Cheese",
+    "chapter": "Eggs",
+    "category": "breakfast",
+    "description": "Simple cheese omelette for a fast meal.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cheese and butter, which are dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "36-inch Blackstone",
+      "spatula"
+    ],
+    "time_minutes": 12,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 1,
+    "servings": 1,
+    "ingredients": [
+      {
+        "quantity": 3,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "3 eggs"
+      },
+      {
+        "quantity": 40,
+        "unit": "g",
+        "item": "cheddar",
+        "original": "40 g cheddar"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "butter",
+        "original": "15 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Whisk eggs with salt.",
+      "Grate cheese.",
+      "Use moderate heat so the eggs stay flexible."
+    ],
+    "notes": "Fold gently before the omelette overcooks.",
+    "tags": [
+      "eggs",
+      "omelette",
+      "cheese",
+      "dairy",
+      "blackstone",
+      "quick"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "The Blackstone works if one zone is kept low and the omelette is handled gently.",
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Oven heat turns this into a baked egg dish, not an omelette.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Air fryer airflow is poor for a folded omelette.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best of the listed appliances if using a cooler zone.",
+        "instructions": [
+          "Set Blackstone to low-medium.",
+          "Melt butter.",
+          "Pour eggs into a thin layer.",
+          "Add cheese once the top is mostly set.",
+          "Fold and serve."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "baked-egg-and-cream-cups",
+    "title": "Baked Egg and Cream Cups",
+    "chapter": "Eggs",
+    "category": "breakfast",
+    "description": "Oven-baked eggs with cream and butter.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cream and butter, which are dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "oven",
+      "ramekins"
+    ],
+    "time_minutes": 22,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 4,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "4 eggs"
+      },
+      {
+        "quantity": 60,
+        "unit": "ml",
+        "item": "cream",
+        "original": "60 ml cream"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "butter",
+        "original": "20 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Butter ramekins.",
+      "Crack eggs into ramekins.",
+      "Add cream and salt."
+    ],
+    "notes": "Good when you want hands-off eggs.",
+    "tags": [
+      "eggs",
+      "cream",
+      "butter",
+      "dairy",
+      "oven",
+      "breakfast"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven gives gentle surrounding heat and keeps the eggs contained.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best hands-off method.",
+        "instructions": [
+          "Heat oven to 180 C.",
+          "Bake ramekins for 10 to 14 minutes until eggs are set to your liking.",
+          "Rest briefly before serving."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works in heat-safe ramekins, but watch closely.",
+        "instructions": [
+          "Preheat COSORI air fryer to 160 C.",
+          "Cook ramekins for 7 to 10 minutes.",
+          "Check early to avoid overcooking."
+        ]
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "This recipe needs cups or ramekins, not a griddle surface.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "cottage-cheese-egg-bake",
+    "title": "Cottage Cheese Egg Bake",
+    "chapter": "Eggs",
+    "category": "baking",
+    "description": "Baked eggs with cottage cheese for an easy dairy-rich meal.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cottage cheese and cheddar, which are dairy.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "oven",
+      "baking dish"
+    ],
+    "time_minutes": 40,
+    "prepTimeMinutes": 10,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 6,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "6 eggs"
+      },
+      {
+        "quantity": 250,
+        "unit": "g",
+        "item": "cottage cheese",
+        "original": "250 g cottage cheese"
+      },
+      {
+        "quantity": 80,
+        "unit": "g",
+        "item": "cheddar",
+        "original": "80 g cheddar"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "butter",
+        "original": "20 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Whisk eggs.",
+      "Stir in cottage cheese, cheddar, and salt.",
+      "Butter a small baking dish."
+    ],
+    "notes": "Cool for 5 minutes before slicing.",
+    "tags": [
+      "eggs",
+      "cottage cheese",
+      "cheddar",
+      "dairy",
+      "oven",
+      "batch"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven sets the egg and cottage cheese mixture evenly.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for structure.",
+        "instructions": [
+          "Heat oven to 180 C.",
+          "Bake in a buttered dish for 25 to 32 minutes until set.",
+          "Rest for 5 minutes before slicing."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works as small portions in silicone moulds.",
+        "instructions": [
+          "Preheat COSORI air fryer to 160 C.",
+          "Cook small moulds for 12 to 16 minutes.",
+          "Rest before removing."
+        ]
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "unavailable",
+        "note": "The mixture is too loose for a griddle surface.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "carnivore-wrap-crepe",
+    "title": "Carnivore Wrap Crepe",
+    "chapter": "Breads",
+    "category": "baking",
+    "description": "Thin egg and cheese wrap for filling with beef, eggs, or cheese.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cheese, which is dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "36-inch Blackstone",
+      "spatula",
+      "blender"
+    ],
+    "time_minutes": 12,
+    "prepTimeMinutes": 5,
+    "difficulty": "medium",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 3,
+        "unit": "eggs",
+        "item": "eggs",
+        "original": "3 eggs"
+      },
+      {
+        "quantity": 40,
+        "unit": "g",
+        "item": "mozzarella",
+        "original": "40 g mozzarella"
+      },
+      {
+        "quantity": 10,
+        "unit": "g",
+        "item": "butter",
+        "original": "10 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Blend eggs, mozzarella, and salt until smooth.",
+      "Let batter rest for 2 minutes.",
+      "Use low heat for flexibility."
+    ],
+    "notes": "Keep it thin. Thick wraps crack when folded.",
+    "tags": [
+      "wrap",
+      "crepe",
+      "eggs",
+      "cheese",
+      "dairy",
+      "blackstone"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "The Blackstone makes thin flexible wraps quickly when using a cooler zone.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works as a small sheet but less flexible.",
+        "instructions": [
+          "Heat oven to 180 C.",
+          "Spread batter thinly on parchment.",
+          "Bake for 8 to 12 minutes until set."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works only in small parchment-supported rounds.",
+        "instructions": [
+          "Preheat COSORI air fryer to 160 C.",
+          "Cook thin portions on parchment for 5 to 8 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for thin flexible wraps.",
+        "instructions": [
+          "Set Blackstone to low.",
+          "Melt a little butter.",
+          "Pour a thin layer and spread quickly.",
+          "Cook until set, then flip briefly."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "air-fryer-chicken-thighs",
+    "title": "Air Fryer Chicken Thighs",
+    "chapter": "Chicken",
+    "category": "mains",
+    "description": "Skin-on chicken thighs cooked in the air fryer.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "COSORI air fryer",
+      "oven"
+    ],
+    "time_minutes": 32,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 3,
+    "servings": 3,
+    "ingredients": [
+      {
+        "quantity": 900,
+        "unit": "g",
+        "item": "skin-on chicken thighs",
+        "original": "900 g skin-on chicken thighs"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "butter or beef tallow",
+        "original": "15 g butter or beef tallow"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Pat chicken dry.",
+      "Salt generously.",
+      "Rub with butter or tallow if using."
+    ],
+    "notes": "Cook skin-side up for better crisping.",
+    "tags": [
+      "chicken",
+      "thighs",
+      "air fryer",
+      "family",
+      "strict"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The air fryer crisps skin well and is practical for a small family batch.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for a larger batch.",
+        "instructions": [
+          "Heat oven to 210 C.",
+          "Place thighs on a rack over a tray.",
+          "Roast for 30 to 40 minutes until done."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Best for crisp skin in a small batch.",
+        "instructions": [
+          "Preheat COSORI air fryer to 195 C.",
+          "Place thighs skin-side up.",
+          "Cook for 20 to 24 minutes until done.",
+          "Rest for 5 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works, but skin can stick if moved too early.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Cook skin-side down first until it releases.",
+          "Turn and finish on a cooler zone."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "oven-bacon-wrapped-chicken",
+    "title": "Oven Bacon-Wrapped Chicken",
+    "chapter": "Chicken",
+    "category": "mains",
+    "description": "Chicken breast wrapped in bacon for an easy oven meal.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "oven",
+      "baking tray"
+    ],
+    "time_minutes": 35,
+    "prepTimeMinutes": 10,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 800,
+        "unit": "g",
+        "item": "chicken breast",
+        "original": "800 g chicken breast"
+      },
+      {
+        "quantity": 200,
+        "unit": "g",
+        "item": "bacon",
+        "original": "200 g bacon"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "butter",
+        "original": "20 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Cut chicken into even portions.",
+      "Salt lightly.",
+      "Wrap each piece with bacon.",
+      "Add small pieces of butter if desired."
+    ],
+    "notes": "Do not oversalt if the bacon is already salty.",
+    "tags": [
+      "chicken",
+      "bacon",
+      "oven",
+      "family",
+      "strict"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven cooks the wrapped chicken evenly and helps the bacon render around it.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best even cooking.",
+        "instructions": [
+          "Heat oven to 200 C.",
+          "Bake on a lined tray for 22 to 30 minutes until done.",
+          "Rest briefly before serving."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for smaller pieces.",
+        "instructions": [
+          "Preheat COSORI air fryer to 190 C.",
+          "Cook in a single layer for 15 to 20 minutes.",
+          "Turn once if needed."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works but bacon can unwrap during turning.",
+        "instructions": [
+          "Heat Blackstone to medium.",
+          "Cook seam-side down first.",
+          "Turn carefully until bacon is browned and chicken is done."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "pork-chops-with-butter",
+    "title": "Pork Chops with Butter",
+    "chapter": "Pork",
+    "category": "mains",
+    "description": "Simple pork chops cooked with butter or tallow.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes butter if used.",
+    "dairy": "optional",
+    "dairyLevel": "optional",
+    "equipment": [
+      "36-inch Blackstone",
+      "COSORI air fryer",
+      "oven"
+    ],
+    "time_minutes": 20,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 2,
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": 500,
+        "unit": "g",
+        "item": "pork chops",
+        "original": "500 g pork chops"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "butter or beef tallow",
+        "original": "20 g butter or beef tallow"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Pat pork chops dry.",
+      "Salt both sides.",
+      "Use chops of similar thickness."
+    ],
+    "notes": "Rest before cutting.",
+    "tags": [
+      "pork",
+      "pork chops",
+      "blackstone",
+      "air fryer",
+      "butter"
+    ],
+    "recommendedMethod": "blackstone",
+    "recommendedReason": "The Blackstone gives the best surface browning and fast control.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for hands-off cooking.",
+        "instructions": [
+          "Heat oven to 200 C.",
+          "Bake chops on a tray for 14 to 20 minutes until done.",
+          "Rest for 5 minutes."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for small batches.",
+        "instructions": [
+          "Preheat COSORI air fryer to 195 C.",
+          "Cook chops for 10 to 14 minutes, turning once.",
+          "Rest for 5 minutes."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "best",
+        "note": "Best crust and control.",
+        "instructions": [
+          "Heat Blackstone to medium-high.",
+          "Melt butter or tallow.",
+          "Cook chops until browned on both sides.",
+          "Move to cooler zone if needed.",
+          "Rest before serving."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "brown-butter-topping",
+    "title": "Brown Butter Topping",
+    "chapter": "Basics",
+    "category": "basics",
+    "description": "Nutty browned butter for steak, eggs, fish, or patties.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes butter, which is dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "saucepan"
+    ],
+    "time_minutes": 8,
+    "prepTimeMinutes": 2,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 100,
+        "unit": "g",
+        "item": "butter",
+        "original": "100 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt",
+        "original": "pinch of salt"
+      }
+    ],
+    "steps": [
+      "Cut butter into pieces.",
+      "Use a light-coloured pan if possible so you can see browning."
+    ],
+    "notes": "Remove from heat once it smells nutty and the solids are golden.",
+    "tags": [
+      "butter",
+      "topping",
+      "dairy",
+      "basics"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop saucepan",
+      "reason": "Brown butter needs controlled direct pan heat, not oven, air fryer, or Blackstone cooking.",
+      "instructions": [
+        "Melt butter over medium heat.",
+        "Stir or swirl until milk solids turn golden.",
+        "Remove from heat and salt lightly."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Oven browning is harder to control for a small amount of butter.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Air fryer heat is not suitable for controlled butter browning.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Blackstone surface heat is too broad for controlled butter browning unless using a separate pan.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "parmesan-crust-topping",
+    "title": "Parmesan Crust Topping",
+    "chapter": "Basics",
+    "category": "basics",
+    "description": "Simple parmesan crust for patties, chicken, or buns.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes parmesan, which is dairy.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "oven",
+      "COSORI air fryer"
+    ],
+    "time_minutes": 10,
+    "prepTimeMinutes": 3,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 80,
+        "unit": "g",
+        "item": "parmesan",
+        "original": "80 g parmesan"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "pork rind crumbs",
+        "original": "20 g pork rind crumbs"
+      },
+      {
+        "quantity": 10,
+        "unit": "g",
+        "item": "butter",
+        "original": "10 g butter"
+      }
+    ],
+    "steps": [
+      "Grate parmesan finely.",
+      "Mix with pork rind crumbs.",
+      "Use butter to help the topping stick if needed."
+    ],
+    "notes": "Use sparingly because parmesan is salty.",
+    "tags": [
+      "parmesan",
+      "pork rinds",
+      "topping",
+      "dairy",
+      "basics"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "The oven melts and browns the topping evenly.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Best even browning.",
+        "instructions": [
+          "Sprinkle topping over cooked meat or buns.",
+          "Bake at 200 C for 5 to 8 minutes until melted and browned."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for small portions.",
+        "instructions": [
+          "Sprinkle topping over cooked food.",
+          "Air fry at 190 C for 3 to 5 minutes until browned."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Works if sprinkled onto hot patties, but loose topping can scatter.",
+        "instructions": [
+          "Add topping directly onto hot cooked patties.",
+          "Cover briefly to melt.",
+          "Serve once the cheese sets slightly."
+        ]
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "cream-cheese-sauce",
+    "title": "Cream Cheese Sauce",
+    "chapter": "Basics",
+    "category": "basics",
+    "description": "Simple creamy sauce for mince, meatballs, eggs, or chicken.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes cream cheese, cream, and butter.",
+    "dairy": "heavy",
+    "dairyLevel": "heavy",
+    "equipment": [
+      "saucepan"
+    ],
+    "time_minutes": 10,
+    "prepTimeMinutes": 3,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 120,
+        "unit": "g",
+        "item": "cream cheese",
+        "original": "120 g cream cheese"
+      },
+      {
+        "quantity": 120,
+        "unit": "ml",
+        "item": "cream",
+        "original": "120 ml cream"
+      },
+      {
+        "quantity": 20,
+        "unit": "g",
+        "item": "butter",
+        "original": "20 g butter"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Soften cream cheese.",
+      "Keep heat low.",
+      "Whisk gradually for a smooth sauce."
+    ],
+    "notes": "Do not boil hard or the sauce may split.",
+    "tags": [
+      "cream cheese",
+      "cream",
+      "sauce",
+      "dairy",
+      "basics"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop saucepan",
+      "reason": "A saucepan gives the low controlled heat needed for a smooth dairy sauce.",
+      "instructions": [
+        "Melt butter over low heat.",
+        "Whisk in cream cheese.",
+        "Add cream gradually.",
+        "Season and keep warm."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Oven heat can split the sauce unless it is baked into another dish.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Air fryer heat is not suitable for a loose dairy sauce.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Blackstone can brown meat, but the sauce should be finished in a pan.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "beef-tallow-cooking-base",
+    "title": "Beef Tallow Cooking Base",
+    "chapter": "Basics",
+    "category": "basics",
+    "description": "Rendered beef tallow for cooking patties, steaks, eggs, and pork.",
+    "strictness": "strict",
+    "reason_not_strict": "",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "saucepan",
+      "fine strainer",
+      "jar"
+    ],
+    "time_minutes": 90,
+    "prepTimeMinutes": 10,
+    "difficulty": "medium",
+    "baseServings": 10,
+    "servings": 10,
+    "ingredients": [
+      {
+        "quantity": 1000,
+        "unit": "g",
+        "item": "beef fat trimmings",
+        "original": "1000 g beef fat trimmings"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "pinch of salt, optional",
+        "original": "pinch of salt, optional"
+      }
+    ],
+    "steps": [
+      "Cut fat into small pieces.",
+      "Place in a heavy saucepan.",
+      "Keep heat low so the fat renders slowly."
+    ],
+    "notes": "Store only after fully cooled and strained. Use normal food storage judgment.",
+    "tags": [
+      "beef",
+      "tallow",
+      "fat",
+      "basics",
+      "strict"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop rendering",
+      "reason": "Slow controlled rendering is best done in a saucepan, not on the three listed appliances.",
+      "instructions": [
+        "Render fat gently over low heat.",
+        "Stir occasionally.",
+        "Strain when the pieces are browned and fat is clear.",
+        "Cool before storing."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "acceptable",
+        "note": "Oven rendering works but takes longer and needs a suitable dish.",
+        "instructions": [
+          "Heat oven to 120 C.",
+          "Place chopped fat in a covered oven-safe dish.",
+          "Render slowly, stirring occasionally.",
+          "Strain carefully."
+        ]
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "Air fryer heat and airflow are not practical for rendering fat.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "A flat griddle is not suitable for slow fat rendering.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  }
+]

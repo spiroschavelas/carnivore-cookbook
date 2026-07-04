@@ -1,0 +1,10 @@
+{
+  "name": "Carnivore Cookbook",
+  "short_name": "Cookbook",
+  "description": "Static personal carnivore recipe cookbook with searchable recipes and recipe studio",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#221f1d",
+  "theme_color": "#8f4326",
+  "icons": []
+}
