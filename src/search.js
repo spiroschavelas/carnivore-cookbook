@@ -6,15 +6,20 @@ export function recipeMatchesSearch(recipe, query) {
 
   const haystack = [
     recipe.title,
+    recipe.chapter,
     recipe.category,
+    recipe.description,
     recipe.strictness,
     recipe.dairy,
     recipe.difficulty,
     recipe.notes,
-    ...recipe.ingredients,
+    recipe.recommendedMethod,
+    recipe.recommendedReason,
+    ...recipe.ingredients.map((ingredient) => typeof ingredient === "string" ? ingredient : `${ingredient.quantity || ""} ${ingredient.unit || ""} ${ingredient.item || ingredient.original || ""}`),
     ...recipe.steps,
     ...recipe.equipment,
-    ...recipe.tags
+    ...recipe.tags,
+    ...Object.entries(recipe.methods || {}).flatMap(([method, value]) => [method, value.quality, value.note, ...(value.instructions || [])])
   ].join(" ").toLowerCase();
 
   return haystack.includes(value);
