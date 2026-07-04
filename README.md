@@ -2,6 +2,8 @@
 
 Static personal carnivore recipe cookbook with searchable recipes and recipe studio.
 
+Published site: https://spiroschavelas.github.io/carnivore-cookbook/
+
 ## What is included
 
 - Searchable recipe cards loaded from `data/recipes.json`.
