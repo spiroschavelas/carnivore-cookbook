@@ -37,7 +37,7 @@ input, select, textarea { width: 100%; border: 1px solid var(--line); border-rad
 textarea { resize: vertical; }
 input:focus, select:focus, textarea:focus, button:focus { outline: 3px solid rgba(224, 161, 93, 0.38); outline-offset: 2px; }
 .search-box { display: block; margin-bottom: 1rem; }
-.filter-grid, .form-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.8rem; }
+.filter-grid, .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.8rem; }
 .toolbar-actions, .form-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-top: 1rem; }
 .checkbox-line { display: inline-flex; align-items: center; gap: 0.45rem; }
 .checkbox-line input { width: 18px; min-height: 18px; }

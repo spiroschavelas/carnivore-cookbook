@@ -47,7 +47,9 @@ async function init() {
 
 function setupFilters() {
   const options = buildFilterOptions(state.recipes);
+  populateSelect(document.querySelector("#filter-chapter"), options.chapters, "Any chapter");
   populateSelect(document.querySelector("#filter-category"), options.categories, "Any category");
+  populateSelect(document.querySelector("#filter-recommended-method"), options.recommendedMethods, "Any best method");
   populateSelect(document.querySelector("#filter-strictness"), options.strictness, "Any strictness");
   populateSelect(document.querySelector("#filter-equipment"), options.equipment, "Any equipment");
   populateSelect(document.querySelector("#filter-tags"), options.tags, "Any tag");

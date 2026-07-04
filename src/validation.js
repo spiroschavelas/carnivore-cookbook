@@ -2,6 +2,7 @@ const STRICTNESS = new Set(["strict", "animal-based", "practical"]);
 const DAIRY = new Set(["none", "optional", "included", "heavy"]);
 const DIFFICULTY = new Set(["easy", "medium", "hard"]);
 const METHODS = ["oven", "airFryer", "blackstone"];
+const RECOMMENDED_METHODS = [...METHODS, "none"];
 const METHOD_QUALITY = new Set(["best", "good", "acceptable", "notRecommended", "unavailable"]);
 
 export function normalizeList(value) {
@@ -62,6 +63,16 @@ function buildMethods(data) {
 
 export function parseIngredientLine(line) {
   const value = clean(line);
+  const countOnlyMatch = value.match(/^(\d+(?:\.\d+)?)(?:\s+)(eggs?|egg yolks?|yolks?)$/i);
+  if (countOnlyMatch) {
+    return {
+      quantity: Number(countOnlyMatch[1]),
+      unit: "eggs",
+      item: normalizeEggItem(countOnlyMatch[2]),
+      original: value
+    };
+  }
+
   const match = value.match(/^(\d+(?:\.\d+)?)(?:\s+)(g|kg|ml|tbsp|tsp|eggs?|pieces?|slices?)\s+(.+)$/i);
   if (!match) {
     return { quantity: null, unit: "", item: value, original: value };
@@ -79,6 +90,10 @@ export function validateRecipe(recipe) {
   const errors = [];
   const baseServings = recipe.baseServings ?? recipe.servings;
   const methods = recipe.methods || {};
+  const usableMethods = METHODS.filter((method) => {
+    const quality = methods[method]?.quality;
+    return quality && !["unavailable", "notRecommended"].includes(quality);
+  });
 
   if (!recipe.id) errors.push("ID is required.");
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(recipe.id)) errors.push("ID must use lowercase letters, numbers, and hyphens.");
@@ -95,8 +110,12 @@ export function validateRecipe(recipe) {
   if (!Number.isInteger(baseServings) || baseServings < 1) errors.push("Base servings must be a positive whole number.");
   if (!Array.isArray(recipe.ingredients) || !recipe.ingredients.length) errors.push("At least one ingredient is required.");
   if (!Array.isArray(recipe.steps) || !recipe.steps.length) errors.push("At least one preparation step is required.");
-  if (!METHODS.includes(recipe.recommendedMethod)) errors.push("Recommended method must be oven, airFryer, or blackstone.");
+  if (!RECOMMENDED_METHODS.includes(recipe.recommendedMethod)) errors.push("Recommended method must be oven, airFryer, blackstone, or none.");
   if (!recipe.recommendedReason) errors.push("Recommended reason is required.");
+  if (!usableMethods.length && recipe.recommendedMethod !== "none") errors.push("Recommended method must be none when no listed appliance method is available.");
+  if (usableMethods.length && recipe.recommendedMethod !== "none" && !usableMethods.includes(recipe.recommendedMethod)) {
+    errors.push("Recommended method should match an available appliance method.");
+  }
 
   METHODS.forEach((method) => {
     const methodData = methods[method];
@@ -140,6 +159,13 @@ function normalizeUnit(unit) {
   if (value === "piece") return "pieces";
   if (value === "slice") return "slices";
   return value;
+}
+
+function normalizeEggItem(item) {
+  const value = clean(item).toLowerCase();
+  if (value === "egg" || value === "eggs") return "eggs";
+  if (value === "yolk" || value === "yolks") return "egg yolks";
+  return "egg yolks";
 }
 
 function clean(value) {

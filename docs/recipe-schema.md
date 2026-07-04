@@ -30,7 +30,7 @@ Every recipe in `data/recipes.json` should use this shape:
   "steps": [],
   "notes": "",
   "tags": [],
-  "recommendedMethod": "oven | airFryer | blackstone",
+  "recommendedMethod": "oven | airFryer | blackstone | none",
   "recommendedReason": "",
   "methods": {
     "oven": {
@@ -65,8 +65,8 @@ Every recipe in `data/recipes.json` should use this shape:
 - `dairy` and `dairyLevel`: dairy is valid in this cookbook. Use these fields for filtering and clarity, not as a warning.
 - `baseServings`: serving count used for ingredient scaling.
 - `ingredients`: use structured quantities where practical. Non-numeric items can use `quantity: null` and keep the original text.
-- `recommendedMethod`: one of `oven`, `airFryer`, or `blackstone`.
-- `recommendedReason`: short practical reason why that method is best or most appropriate.
+- `recommendedMethod`: one of `oven`, `airFryer`, `blackstone`, or `none`. Use `none` when no listed appliance method fits the recipe.
+- `recommendedReason`: short practical reason why that method is best, or why no listed appliance is recommended.
 - `methods`: include all three appliance keys. Use `notRecommended` or `unavailable` with a clear note when a method does not make sense.
 
 Avoid medical, weight-loss, and health claims in recipes, notes, and UI copy.

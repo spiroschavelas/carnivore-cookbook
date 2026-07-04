@@ -1,8 +1,11 @@
 const METHOD_LABELS = {
   oven: "Oven",
   airFryer: "Air fryer",
-  blackstone: "Blackstone"
+  blackstone: "Blackstone",
+  none: "No appliance recommendation"
 };
+
+const APPLIANCE_METHODS = ["oven", "airFryer", "blackstone"];
 
 export function renderRecipeCards(container, recipes, favourites, handlers) {
   container.innerHTML = "";
@@ -23,7 +26,7 @@ export function renderRecipeCards(container, recipes, favourites, handlers) {
 
 export function renderRecipeDetail(container, recipe, isFavourite) {
   const baseServings = recipe.baseServings ?? recipe.servings;
-  const selectedMethod = recipe.recommendedMethod;
+  const selectedMethod = initialSelectedMethod(recipe);
   container.innerHTML = `
     <header class="detail-header">
       <p class="eyebrow">${escapeHtml(recipe.chapter || recipe.category)}</p>
@@ -33,28 +36,37 @@ export function renderRecipeDetail(container, recipe, isFavourite) {
       <p>${isFavourite ? "Saved as favourite" : "Not saved as favourite"}</p>
     </header>
     <section class="recommended-box">
-      <h3>Recommended method: ${escapeHtml(methodLabel(recipe.recommendedMethod))}</h3>
+      <h3>${escapeHtml(recommendationHeading(recipe))}</h3>
       <p>${escapeHtml(recipe.recommendedReason)}</p>
     </section>
     ${recipe.reason_not_strict ? `<p class="notice">Practical note: ${escapeHtml(recipe.reason_not_strict)}</p>` : ""}
     <section class="ingredients-section">
       <div class="section-heading-row">
         <h3>Ingredients</h3>
-        <label class="servings-control"><span>Servings</span><input id="servings-input" type="number" min="1" step="1" value="${baseServings}"></label>
+        <label class="servings-control">
+          <span>Servings</span>
+          <input id="servings-input" type="number" min="1" step="1" value="${baseServings}">
+        </label>
       </div>
       <p class="base-servings">Base recipe: ${baseServings} serving${baseServings === 1 ? "" : "s"}</p>
       <ul id="scaled-ingredients"></ul>
     </section>
-    <section><h3>Preparation</h3><ol>${recipe.steps.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol></section>
+    <section>
+      <h3>Preparation</h3>
+      <ol>${recipe.steps.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>
+    </section>
     <section class="method-section">
       <h3>Cooking method</h3>
       <div class="method-tabs" role="tablist" aria-label="Cooking methods">
-        ${Object.keys(METHOD_LABELS).map((method) => methodButtonMarkup(recipe, method, selectedMethod)).join("")}
+        ${APPLIANCE_METHODS.map((method) => methodButtonMarkup(recipe, method, selectedMethod)).join("")}
       </div>
       <div id="method-detail"></div>
     </section>
     ${recipe.notes ? `<section><h3>Notes</h3><p>${escapeHtml(recipe.notes)}</p><p class="scale-note">Cooking time may need adjustment for larger batches.</p></section>` : ""}
-    <section><h3>Tags</h3><p class="tag-row">${recipe.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</p></section>
+    <section>
+      <h3>Tags</h3>
+      <p class="tag-row">${recipe.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</p>
+    </section>
   `;
 
   const ingredientsList = container.querySelector("#scaled-ingredients");
@@ -86,9 +98,9 @@ export function renderRecipeDetail(container, recipe, isFavourite) {
 }
 
 export function recipeCardMarkup(recipe, isFavourite) {
-  const availableMethods = Object.entries(recipe.methods || {})
-    .filter(([, method]) => !["unavailable", "notRecommended"].includes(method.quality))
-    .map(([method]) => methodLabel(method))
+  const availableMethods = APPLIANCE_METHODS
+    .filter((method) => isUsableMethod(recipe.methods?.[method]))
+    .map((method) => methodLabel(method))
     .join(", ");
 
   return `
@@ -97,11 +109,13 @@ export function recipeCardMarkup(recipe, isFavourite) {
         <p class="eyebrow">${escapeHtml(recipe.chapter || recipe.category)}</p>
         <h2>${escapeHtml(recipe.title)}</h2>
       </div>
-      <button class="icon-button ${isFavourite ? "active" : ""}" type="button" data-action="favourite" aria-label="${isFavourite ? "Remove favourite" : "Add favourite"}">${isFavourite ? "Saved" : "Save"}</button>
+      <button class="icon-button ${isFavourite ? "active" : ""}" type="button" data-action="favourite" aria-label="${isFavourite ? "Remove favourite" : "Add favourite"}">
+        ${isFavourite ? "Saved" : "Save"}
+      </button>
     </div>
     <p class="card-description">${escapeHtml(recipe.description || "")}</p>
     <p class="card-meta">${formatMeta(recipe)}</p>
-    <p class="method-summary"><strong>Best:</strong> ${escapeHtml(methodLabel(recipe.recommendedMethod))}</p>
+    <p class="method-summary"><strong>Best:</strong> ${escapeHtml(methodLabel(recipe.recommendedMethod || "none"))}</p>
     <p class="method-summary"><strong>Methods:</strong> ${escapeHtml(availableMethods || "None listed")}</p>
     <p class="tag-row">${recipe.tags.slice(0, 4).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</p>
     <button class="text-button" type="button" data-action="view">View recipe</button>
@@ -120,9 +134,18 @@ export function formatMeta(recipe) {
 }
 
 export function formatIngredient(ingredient, ratio) {
-  if (typeof ingredient === "string") return ingredient;
-  if (!ingredient || typeof ingredient.quantity !== "number" || !ingredient.unit) return ingredient?.original || ingredient?.item || "";
+  if (typeof ingredient === "string") {
+    return ingredient;
+  }
+  if (!ingredient || typeof ingredient.quantity !== "number" || !ingredient.unit) {
+    return ingredient?.original || ingredient?.item || "";
+  }
+
   const quantity = roundQuantity(ingredient.quantity * ratio, ingredient.unit);
+  if (ingredient.unit === "eggs") {
+    return formatEggIngredient(quantity, ingredient.item);
+  }
+
   const unit = formatUnit(quantity, ingredient.unit);
   return `${quantity} ${unit} ${ingredient.item}`.trim();
 }
@@ -134,13 +157,32 @@ function methodDetailMarkup(recipe, method) {
     <article class="method-detail ${warning ? "warning" : ""}">
       <p><strong>${escapeHtml(methodLabel(method))} quality:</strong> ${escapeHtml(methodData.quality)}</p>
       ${methodData.note ? `<p>${escapeHtml(methodData.note)}</p>` : ""}
-      ${methodData.instructions?.length ? `<ol>${methodData.instructions.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>` : `<p>No cooking instructions for this method.</p>`}
+      ${methodData.instructions?.length
+        ? `<ol>${methodData.instructions.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`
+        : `<p>No cooking instructions for this method.</p>`}
     </article>
   `;
 }
 
 function methodButtonMarkup(recipe, method, selectedMethod) {
-  return `<button type="button" class="method-tab" data-method="${method}" aria-selected="${method === selectedMethod}">${methodLabel(method)}</button>`;
+  const methodData = recipe.methods?.[method] || { quality: "unavailable" };
+  const disabled = methodData.quality === "unavailable" ? "" : "";
+  return `<button type="button" class="method-tab" data-method="${method}" aria-selected="${method === selectedMethod}" ${disabled}>${methodLabel(method)}</button>`;
+}
+
+function initialSelectedMethod(recipe) {
+  if (APPLIANCE_METHODS.includes(recipe.recommendedMethod)) return recipe.recommendedMethod;
+  return APPLIANCE_METHODS.find((method) => isUsableMethod(recipe.methods?.[method])) || "oven";
+}
+
+function recommendationHeading(recipe) {
+  return recipe.recommendedMethod === "none"
+    ? "No appliance recommendation"
+    : `Recommended method: ${methodLabel(recipe.recommendedMethod)}`;
+}
+
+function isUsableMethod(methodData) {
+  return methodData && !["unavailable", "notRecommended"].includes(methodData.quality);
 }
 
 function roundQuantity(value, unit) {
@@ -157,6 +199,20 @@ function formatUnit(quantity, unit) {
   if (quantity === 1 && unit === "pieces") return "piece";
   if (quantity === 1 && unit === "slices") return "slice";
   return unit;
+}
+
+function formatEggIngredient(quantity, item) {
+  const normalized = String(item || "eggs").trim().toLowerCase();
+  if (normalized === "egg" || normalized === "eggs") {
+    return `${quantity} ${quantity === 1 ? "egg" : "eggs"}`;
+  }
+  if (normalized === "yolk" || normalized === "yolks" || normalized === "egg yolk" || normalized === "egg yolks") {
+    return `${quantity} egg ${quantity === 1 ? "yolk" : "yolks"}`;
+  }
+  if (normalized.startsWith("egg ")) {
+    return `${quantity} ${quantity === 1 ? normalized.replace(/s$/, "") : normalized}`;
+  }
+  return `${quantity} ${normalized}`;
 }
 
 function methodLabel(method) {

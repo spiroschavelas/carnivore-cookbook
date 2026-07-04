@@ -355,7 +355,7 @@
     "steps": ["Warm cream and salt.", "Temper egg yolks with warm cream.", "Stir over low heat until lightly thickened.", "Chill fully before churning."],
     "notes": "This is unsweetened. Add only ingredients that fit your own version.",
     "tags": ["dessert", "cream", "egg yolks", "dairy"],
-    "recommendedMethod": "oven",
+    "recommendedMethod": "none",
     "recommendedReason": "No oven, air fryer, or Blackstone method is appropriate; stovetop custard plus ice cream maker is the practical method.",
     "methods": {
       "oven": { "available": false, "quality": "unavailable", "note": "This recipe needs stovetop custard and churning, not oven cooking.", "instructions": [] },
@@ -422,7 +422,7 @@
     "steps": ["Add mascarpone, cream, and salt to a cold bowl.", "Whisk until thick and spoonable."],
     "notes": "No cooking required.",
     "tags": ["dessert", "mascarpone", "cream", "dairy"],
-    "recommendedMethod": "oven",
+    "recommendedMethod": "none",
     "recommendedReason": "No cooking appliance is needed; keep this recipe cold.",
     "methods": {
       "oven": { "available": false, "quality": "unavailable", "note": "This is a cold recipe and should not be baked.", "instructions": [] },
