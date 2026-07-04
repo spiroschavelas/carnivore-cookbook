@@ -9,6 +9,7 @@
 
 .studio-form,
 .preview-panel > section {
+  min-width: 0;
   background: var(--card);
   color: var(--ink);
   border: 1px solid var(--line);
@@ -31,6 +32,7 @@
 }
 
 .preview-panel {
+  min-width: 0;
   display: grid;
   gap: 1rem;
   align-self: start;
@@ -66,5 +68,8 @@
 }
 
 @media (max-width: 640px) {
+  .studio-shell { padding: 0.75rem; }
   .form-grid { grid-template-columns: 1fr; }
+  .form-actions button { flex: 1 1 180px; }
+  .json-box pre { max-height: 320px; }
 }

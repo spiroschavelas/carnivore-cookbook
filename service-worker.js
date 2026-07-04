@@ -1,4 +1,4 @@
-const CACHE_NAME = "carnivore-cookbook-v1";
+const CACHE_NAME = "carnivore-cookbook-v3";
 const ASSETS = [
   "index.html",
   "studio.html",

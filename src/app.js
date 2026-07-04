@@ -18,7 +18,9 @@ const elements = {
   favouriteCount: document.querySelector("#favourite-count"),
   dialog: document.querySelector("#recipe-dialog"),
   detail: document.querySelector("#recipe-detail"),
-  clearFilters: document.querySelector("#clear-filters")
+  clearFilters: document.querySelector("#clear-filters"),
+  filterToggle: document.querySelector("#filter-toggle"),
+  toolbar: document.querySelector(".toolbar")
 };
 
 init();
@@ -59,8 +61,13 @@ function setupFilters() {
 }
 
 function bindEvents() {
-  document.querySelector(".toolbar").addEventListener("input", applySearchAndFilters);
-  document.querySelector(".toolbar").addEventListener("change", applySearchAndFilters);
+  elements.toolbar.addEventListener("input", applySearchAndFilters);
+  elements.toolbar.addEventListener("change", applySearchAndFilters);
+  elements.filterToggle.addEventListener("click", () => {
+    const expanded = elements.toolbar.classList.toggle("filters-open");
+    elements.filterToggle.setAttribute("aria-expanded", String(expanded));
+    elements.filterToggle.textContent = expanded ? "Hide filters" : "Show filters";
+  });
   elements.clearFilters.addEventListener("click", () => {
     elements.search.value = "";
     resetFilters();
@@ -91,6 +98,8 @@ function applySearchAndFilters() {
 
 function openRecipe(recipe) {
   renderRecipeDetail(elements.detail, recipe, state.favourites.has(recipe.id));
+  elements.dialog.scrollTop = 0;
+  elements.detail.scrollTop = 0;
   if (typeof elements.dialog.showModal === "function") {
     elements.dialog.showModal();
   } else {
