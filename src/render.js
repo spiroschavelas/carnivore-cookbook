@@ -1,3 +1,9 @@
+const METHOD_LABELS = {
+  oven: "Oven",
+  airFryer: "Air fryer",
+  blackstone: "Blackstone"
+};
+
 export function renderRecipeCards(container, recipes, favourites, handlers) {
   container.innerHTML = "";
   const fragment = document.createDocumentFragment();
@@ -16,34 +22,87 @@ export function renderRecipeCards(container, recipes, favourites, handlers) {
 }
 
 export function renderRecipeDetail(container, recipe, isFavourite) {
+  const baseServings = recipe.baseServings ?? recipe.servings;
+  const selectedMethod = recipe.recommendedMethod;
   container.innerHTML = `
     <header class="detail-header">
-      <p class="eyebrow">${escapeHtml(recipe.category)}</p>
+      <p class="eyebrow">${escapeHtml(recipe.chapter || recipe.category)}</p>
       <h2>${escapeHtml(recipe.title)}</h2>
+      <p class="detail-description">${escapeHtml(recipe.description || "")}</p>
       <p>${formatMeta(recipe)}</p>
       <p>${isFavourite ? "Saved as favourite" : "Not saved as favourite"}</p>
     </header>
-    ${recipe.reason_not_strict ? `<p class="notice">Not strict: ${escapeHtml(recipe.reason_not_strict)}</p>` : ""}
-    <section><h3>Ingredients</h3><ul>${recipe.ingredients.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
-    <section><h3>Steps</h3><ol>${recipe.steps.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol></section>
-    ${recipe.notes ? `<section><h3>Notes</h3><p>${escapeHtml(recipe.notes)}</p></section>` : ""}
+    <section class="recommended-box">
+      <h3>Recommended method: ${escapeHtml(methodLabel(recipe.recommendedMethod))}</h3>
+      <p>${escapeHtml(recipe.recommendedReason)}</p>
+    </section>
+    ${recipe.reason_not_strict ? `<p class="notice">Practical note: ${escapeHtml(recipe.reason_not_strict)}</p>` : ""}
+    <section class="ingredients-section">
+      <div class="section-heading-row">
+        <h3>Ingredients</h3>
+        <label class="servings-control"><span>Servings</span><input id="servings-input" type="number" min="1" step="1" value="${baseServings}"></label>
+      </div>
+      <p class="base-servings">Base recipe: ${baseServings} serving${baseServings === 1 ? "" : "s"}</p>
+      <ul id="scaled-ingredients"></ul>
+    </section>
+    <section><h3>Preparation</h3><ol>${recipe.steps.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol></section>
+    <section class="method-section">
+      <h3>Cooking method</h3>
+      <div class="method-tabs" role="tablist" aria-label="Cooking methods">
+        ${Object.keys(METHOD_LABELS).map((method) => methodButtonMarkup(recipe, method, selectedMethod)).join("")}
+      </div>
+      <div id="method-detail"></div>
+    </section>
+    ${recipe.notes ? `<section><h3>Notes</h3><p>${escapeHtml(recipe.notes)}</p><p class="scale-note">Cooking time may need adjustment for larger batches.</p></section>` : ""}
     <section><h3>Tags</h3><p class="tag-row">${recipe.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</p></section>
   `;
+
+  const ingredientsList = container.querySelector("#scaled-ingredients");
+  const servingsInput = container.querySelector("#servings-input");
+  const methodDetail = container.querySelector("#method-detail");
+
+  const updateIngredients = () => {
+    const servings = Math.max(1, Number(servingsInput.value) || baseServings);
+    ingredientsList.innerHTML = recipe.ingredients
+      .map((ingredient) => `<li>${escapeHtml(formatIngredient(ingredient, servings / baseServings))}</li>`)
+      .join("");
+  };
+
+  const selectMethod = (method) => {
+    container.querySelectorAll("[data-method]").forEach((button) => {
+      button.classList.toggle("active", button.dataset.method === method);
+      button.setAttribute("aria-selected", String(button.dataset.method === method));
+    });
+    methodDetail.innerHTML = methodDetailMarkup(recipe, method);
+  };
+
+  servingsInput.addEventListener("input", updateIngredients);
+  container.querySelectorAll("[data-method]").forEach((button) => {
+    button.addEventListener("click", () => selectMethod(button.dataset.method));
+  });
+
+  updateIngredients();
+  selectMethod(selectedMethod);
 }
 
 export function recipeCardMarkup(recipe, isFavourite) {
+  const availableMethods = Object.entries(recipe.methods || {})
+    .filter(([, method]) => !["unavailable", "notRecommended"].includes(method.quality))
+    .map(([method]) => methodLabel(method))
+    .join(", ");
+
   return `
     <div class="card-top">
       <div>
-        <p class="eyebrow">${escapeHtml(recipe.category)}</p>
+        <p class="eyebrow">${escapeHtml(recipe.chapter || recipe.category)}</p>
         <h2>${escapeHtml(recipe.title)}</h2>
       </div>
-      <button class="icon-button ${isFavourite ? "active" : ""}" type="button" data-action="favourite" aria-label="${isFavourite ? "Remove favourite" : "Add favourite"}">
-        ${isFavourite ? "Saved" : "Save"}
-      </button>
+      <button class="icon-button ${isFavourite ? "active" : ""}" type="button" data-action="favourite" aria-label="${isFavourite ? "Remove favourite" : "Add favourite"}">${isFavourite ? "Saved" : "Save"}</button>
     </div>
+    <p class="card-description">${escapeHtml(recipe.description || "")}</p>
     <p class="card-meta">${formatMeta(recipe)}</p>
-    ${recipe.reason_not_strict ? `<p class="reason">Not strict: ${escapeHtml(recipe.reason_not_strict)}</p>` : ""}
+    <p class="method-summary"><strong>Best:</strong> ${escapeHtml(methodLabel(recipe.recommendedMethod))}</p>
+    <p class="method-summary"><strong>Methods:</strong> ${escapeHtml(availableMethods || "None listed")}</p>
     <p class="tag-row">${recipe.tags.slice(0, 4).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</p>
     <button class="text-button" type="button" data-action="view">View recipe</button>
   `;
@@ -56,7 +115,52 @@ export function renderPreview(container, recipe, errors = []) {
 }
 
 export function formatMeta(recipe) {
-  return `${recipe.time_minutes} min | ${recipe.difficulty} | ${recipe.servings} serving${recipe.servings === 1 ? "" : "s"} | ${recipe.strictness} | dairy ${recipe.dairy}`;
+  const baseServings = recipe.baseServings ?? recipe.servings;
+  return `${recipe.time_minutes} min | ${recipe.difficulty} | base ${baseServings} serving${baseServings === 1 ? "" : "s"} | dairy ${recipe.dairy}`;
+}
+
+export function formatIngredient(ingredient, ratio) {
+  if (typeof ingredient === "string") return ingredient;
+  if (!ingredient || typeof ingredient.quantity !== "number" || !ingredient.unit) return ingredient?.original || ingredient?.item || "";
+  const quantity = roundQuantity(ingredient.quantity * ratio, ingredient.unit);
+  const unit = formatUnit(quantity, ingredient.unit);
+  return `${quantity} ${unit} ${ingredient.item}`.trim();
+}
+
+function methodDetailMarkup(recipe, method) {
+  const methodData = recipe.methods?.[method] || { quality: "unavailable", note: "No instructions available.", instructions: [] };
+  const warning = methodData.quality === "notRecommended" || methodData.quality === "unavailable";
+  return `
+    <article class="method-detail ${warning ? "warning" : ""}">
+      <p><strong>${escapeHtml(methodLabel(method))} quality:</strong> ${escapeHtml(methodData.quality)}</p>
+      ${methodData.note ? `<p>${escapeHtml(methodData.note)}</p>` : ""}
+      ${methodData.instructions?.length ? `<ol>${methodData.instructions.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>` : `<p>No cooking instructions for this method.</p>`}
+    </article>
+  `;
+}
+
+function methodButtonMarkup(recipe, method, selectedMethod) {
+  return `<button type="button" class="method-tab" data-method="${method}" aria-selected="${method === selectedMethod}">${methodLabel(method)}</button>`;
+}
+
+function roundQuantity(value, unit) {
+  if (unit === "g") return Math.max(5, Math.round(value / 5) * 5);
+  if (unit === "kg") return Number(value.toFixed(value < 1 ? 2 : 1));
+  if (unit === "ml") return Math.max(5, Math.round(value / 5) * 5);
+  if (unit === "tbsp" || unit === "tsp") return Math.round(value * 2) / 2;
+  if (unit === "eggs" || unit === "pieces" || unit === "slices") return Math.max(1, Math.round(value));
+  return Number(value.toFixed(1));
+}
+
+function formatUnit(quantity, unit) {
+  if (quantity === 1 && unit === "eggs") return "egg";
+  if (quantity === 1 && unit === "pieces") return "piece";
+  if (quantity === 1 && unit === "slices") return "slice";
+  return unit;
+}
+
+function methodLabel(method) {
+  return METHOD_LABELS[method] || method;
 }
 
 export function escapeHtml(value) {
