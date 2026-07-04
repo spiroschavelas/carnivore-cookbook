@@ -12,6 +12,17 @@ Use `studio.html` to create recipe data.
 
 Studio stores drafts in localStorage on the same browser. It does not automatically update the deployed site.
 
+## Method instructions
+
+Each recipe should include a recommended method and instructions for oven, air fryer, and Blackstone where they make sense. Use:
+
+- `best` for the preferred method.
+- `good` or `acceptable` for workable alternatives.
+- `notRecommended` when the method can be selected but should be avoided.
+- `unavailable` when the appliance does not apply.
+
+For unavailable or not recommended methods, add a short practical note explaining why.
+
 ## Images
 
 Put recipe images in `assets/images/recipes/` and set the recipe `image` field to that path. Images are optional.
