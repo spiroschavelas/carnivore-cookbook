@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#221f1d">
+    <meta name="description" content="Create recipe JSON for the Carnivore Cookbook">
+    <title>Recipe Studio | Carnivore Cookbook</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/studio.css">
+  </head>
+  <body>
+    <header class="site-header compact">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">Carnivore Cookbook</a>
+        <a class="nav-link" href="studio.html" aria-current="page">Recipe Studio</a>
+      </nav>
+      <section class="intro" aria-labelledby="studio-title">
+        <p class="eyebrow">Recipe data builder</p>
+        <h1 id="studio-title">Create recipe JSON without editing files by hand.</h1>
+        <p class="intro-copy">Studio generates recipe data. It does not update the deployed site automatically. Commit the updated <code>data/recipes.json</code> and redeploy for changes to appear online.</p>
+      </section>
+    </header>
+
+    <main class="studio-shell">
+      <form id="recipe-form" class="studio-form" novalidate>
+        <section class="form-section">
+          <h2>Recipe basics</h2>
+          <div class="form-grid">
+            <label><span>ID</span><input id="id" name="id" type="text" placeholder="blackstone-ribeye" required></label>
+            <label><span>Title</span><input id="title" name="title" type="text" required></label>
+            <label><span>Category</span><input id="category" name="category" type="text" list="category-options" required></label>
+            <label><span>Strictness</span><select id="strictness" name="strictness" required><option value="strict">strict</option><option value="animal-based">animal-based</option><option value="practical">practical</option></select></label>
+            <label class="full"><span>Reason not strict</span><input id="reason_not_strict" name="reason_not_strict" type="text"></label>
+            <label><span>Dairy</span><select id="dairy" name="dairy" required><option value="none">none</option><option value="optional">optional</option><option value="included">included</option><option value="heavy">heavy</option></select></label>
+            <label><span>Time minutes</span><input id="time_minutes" name="time_minutes" type="number" min="1" step="1" required></label>
+            <label><span>Difficulty</span><select id="difficulty" name="difficulty" required><option value="easy">easy</option><option value="medium">medium</option><option value="hard">hard</option></select></label>
+            <label><span>Servings</span><input id="servings" name="servings" type="number" min="1" step="1" required></label>
+            <label class="full"><span>Image path</span><input id="image" name="image" type="text" placeholder="assets/images/recipes/example.jpg"></label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h2>Lists</h2>
+          <div class="form-grid">
+            <label><span>Equipment, comma separated</span><input id="equipment" name="equipment" type="text" placeholder="Blackstone, tongs"></label>
+            <label><span>Tags, comma separated</span><input id="tags" name="tags" type="text" placeholder="beef, quick"></label>
+            <label class="full"><span>Ingredients, one per line</span><textarea id="ingredients" name="ingredients" rows="7" required></textarea></label>
+            <label class="full"><span>Steps, one per line</span><textarea id="steps" name="steps" rows="7" required></textarea></label>
+            <label class="full"><span>Notes</span><textarea id="notes" name="notes" rows="4"></textarea></label>
+          </div>
+        </section>
+
+        <section class="form-actions" aria-label="Studio actions">
+          <button type="button" id="copy-json">Copy JSON</button>
+          <button type="button" id="download-recipe">Download recipe JSON</button>
+          <button type="button" id="download-recipes">Download updated recipes.json</button>
+          <button type="button" id="save-draft">Save draft locally</button>
+          <button type="button" id="load-draft">Load local draft</button>
+          <button type="reset" id="clear-form">Clear form</button>
+        </section>
+        <p id="studio-status" class="status-line" role="status"></p>
+      </form>
+
+      <aside class="preview-panel">
+        <section class="validation-box"><h2>Validation</h2><ul id="validation-list"></ul></section>
+        <section class="json-box"><h2>Generated JSON</h2><pre id="json-output">{}</pre></section>
+        <section class="preview-box"><h2>Live preview</h2><article id="live-preview" class="recipe-card preview"></article></section>
+      </aside>
+    </main>
+
+    <datalist id="category-options"></datalist>
+    <script type="module" src="src/studio.js"></script>
+  </body>
+</html>
