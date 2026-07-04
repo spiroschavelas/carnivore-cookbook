@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#221f1d">
+    <meta name="description" content="Static personal carnivore recipe cookbook with searchable recipes and recipe studio">
+    <title>Carnivore Cookbook</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">Carnivore Cookbook</a>
+        <a class="nav-link" href="studio.html">Recipe Studio</a>
+      </nav>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Personal recipe library</p>
+        <h1 id="page-title">Searchable carnivore recipes for everyday cooking.</h1>
+        <p class="intro-copy">Browse meals by category, ingredients, equipment, time, and strictness. No medical, weight-loss, or health claims.</p>
+      </section>
+    </header>
+
+    <main class="app-shell">
+      <section class="toolbar" aria-label="Recipe search and filters">
+        <label class="search-box" for="search-input">
+          <span>Search recipes</span>
+          <input id="search-input" type="search" placeholder="Search title, ingredients, tags..." autocomplete="off">
+        </label>
+
+        <div class="filter-grid">
+          <label><span>Category</span><select id="filter-category"></select></label>
+          <label><span>Strictness</span><select id="filter-strictness"></select></label>
+          <label><span>Equipment</span><select id="filter-equipment"></select></label>
+          <label><span>Tags</span><select id="filter-tags"></select></label>
+          <label><span>Dairy level</span><select id="filter-dairy"></select></label>
+          <label><span>Max time</span><select id="filter-time"></select></label>
+          <label><span>Difficulty</span><select id="filter-difficulty"></select></label>
+        </div>
+
+        <div class="toolbar-actions">
+          <button id="clear-filters" type="button">Clear filters</button>
+          <label class="checkbox-line"><input id="filter-favourites" type="checkbox"><span>Favourites only</span></label>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <aside class="summary-panel" aria-label="Cookbook summary">
+          <h2>Library</h2>
+          <dl>
+            <div><dt>Total recipes</dt><dd id="total-count">0</dd></div>
+            <div><dt>Showing</dt><dd id="visible-count">0</dd></div>
+            <div><dt>Favourites</dt><dd id="favourite-count">0</dd></div>
+          </dl>
+        </aside>
+
+        <section class="recipes-area" aria-live="polite">
+          <div id="recipe-list" class="recipe-list"></div>
+          <p id="empty-state" class="empty-state" hidden>No recipes match the current search and filters.</p>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="recipe-dialog" class="recipe-dialog">
+      <article id="recipe-detail"></article>
+      <form method="dialog"><button class="dialog-close" type="submit">Close</button></form>
+    </dialog>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
