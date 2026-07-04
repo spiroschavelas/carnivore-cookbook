@@ -1,23 +1,57 @@
 # Recipe schema
 
-Every recipe in `data/recipes.json` must match this shape:
+Every recipe in `data/recipes.json` should use this shape:
 
 ```json
 {
   "id": "",
   "title": "",
+  "chapter": "",
   "category": "",
+  "description": "",
   "strictness": "strict | animal-based | practical",
   "reason_not_strict": "",
   "dairy": "none | optional | included | heavy",
+  "dairyLevel": "none | optional | included | heavy",
   "equipment": [],
   "time_minutes": 0,
+  "prepTimeMinutes": 0,
   "difficulty": "easy | medium | hard",
+  "baseServings": 1,
   "servings": 1,
-  "ingredients": [],
+  "ingredients": [
+    {
+      "quantity": 250,
+      "unit": "g",
+      "item": "ground beef",
+      "original": "250 g ground beef"
+    }
+  ],
   "steps": [],
   "notes": "",
   "tags": [],
+  "recommendedMethod": "oven | airFryer | blackstone",
+  "recommendedReason": "",
+  "methods": {
+    "oven": {
+      "available": true,
+      "quality": "best | good | acceptable | notRecommended | unavailable",
+      "note": "",
+      "instructions": []
+    },
+    "airFryer": {
+      "available": true,
+      "quality": "best | good | acceptable | notRecommended | unavailable",
+      "note": "",
+      "instructions": []
+    },
+    "blackstone": {
+      "available": true,
+      "quality": "best | good | acceptable | notRecommended | unavailable",
+      "note": "",
+      "instructions": []
+    }
+  },
   "image": ""
 }
 ```
@@ -25,19 +59,14 @@ Every recipe in `data/recipes.json` must match this shape:
 ## Field rules
 
 - `id`: unique lowercase slug using letters, numbers, and hyphens.
-- `title`: display name shown on recipe cards and detail views.
-- `category`: single category, for example `mains`, `breakfast`, or `desserts`.
-- `strictness`: one of `strict`, `animal-based`, or `practical`.
-- `reason_not_strict`: blank for strict recipes, required for non-strict recipes.
-- `dairy`: one of `none`, `optional`, `included`, or `heavy`.
-- `equipment`: array of equipment strings used by filters.
-- `time_minutes`: positive whole number.
-- `difficulty`: one of `easy`, `medium`, or `hard`.
-- `servings`: positive whole number.
-- `ingredients`: non-empty array of ingredient strings.
-- `steps`: non-empty array of preparation steps.
-- `notes`: optional plain text.
-- `tags`: array of short labels used by filters and search.
-- `image`: optional path to an image under `assets/images/recipes/`.
+- `chapter`: display chapter shown on cards and detail pages.
+- `category`: filter category.
+- `description`: short practical card summary.
+- `dairy` and `dairyLevel`: dairy is valid in this cookbook. Use these fields for filtering and clarity, not as a warning.
+- `baseServings`: serving count used for ingredient scaling.
+- `ingredients`: use structured quantities where practical. Non-numeric items can use `quantity: null` and keep the original text.
+- `recommendedMethod`: one of `oven`, `airFryer`, or `blackstone`.
+- `recommendedReason`: short practical reason why that method is best or most appropriate.
+- `methods`: include all three appliance keys. Use `notRecommended` or `unavailable` with a clear note when a method does not make sense.
 
 Avoid medical, weight-loss, and health claims in recipes, notes, and UI copy.
