@@ -120,21 +120,36 @@ function loadLocalDraft() {
 }
 
 function fillForm(recipe) {
+  const baseServings = recipe.baseServings ?? recipe.servings;
   Object.entries({
     id: recipe.id,
     title: recipe.title,
+    chapter: recipe.chapter || recipe.category,
     category: recipe.category,
+    description: recipe.description,
     strictness: recipe.strictness,
     reason_not_strict: recipe.reason_not_strict,
     dairy: recipe.dairy,
     equipment: (recipe.equipment || []).join(", "),
     time_minutes: recipe.time_minutes,
+    prepTimeMinutes: recipe.prepTimeMinutes,
     difficulty: recipe.difficulty,
-    servings: recipe.servings,
-    ingredients: (recipe.ingredients || []).join("\n"),
+    baseServings,
+    ingredients: (recipe.ingredients || []).map(formatIngredientForForm).join("\n"),
     steps: (recipe.steps || []).join("\n"),
     notes: recipe.notes,
     tags: (recipe.tags || []).join(", "),
+    recommendedMethod: recipe.recommendedMethod,
+    recommendedReason: recipe.recommendedReason,
+    ovenQuality: recipe.methods?.oven?.quality,
+    ovenNote: recipe.methods?.oven?.note,
+    ovenInstructions: (recipe.methods?.oven?.instructions || []).join("\n"),
+    airFryerQuality: recipe.methods?.airFryer?.quality,
+    airFryerNote: recipe.methods?.airFryer?.note,
+    airFryerInstructions: (recipe.methods?.airFryer?.instructions || []).join("\n"),
+    blackstoneQuality: recipe.methods?.blackstone?.quality,
+    blackstoneNote: recipe.methods?.blackstone?.note,
+    blackstoneInstructions: (recipe.methods?.blackstone?.instructions || []).join("\n"),
     image: recipe.image
   }).forEach(([name, value]) => {
     const field = form.elements.namedItem(name);
@@ -172,4 +187,10 @@ function downloadJson(filename, data) {
 
 function setStatus(message) {
   statusLine.textContent = message;
+}
+
+function formatIngredientForForm(ingredient) {
+  if (typeof ingredient === "string") return ingredient;
+  if (!ingredient || ingredient.quantity == null || !ingredient.unit) return ingredient?.original || ingredient?.item || "";
+  return `${ingredient.quantity} ${ingredient.unit} ${ingredient.item}`.trim();
 }
