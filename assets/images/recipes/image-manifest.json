@@ -1,0 +1,432 @@
+[
+  {
+    "recipeId": "blackstone-ribeye-with-beef-tallow",
+    "localPath": "assets/images/recipes/blackstone-ribeye-with-beef-tallow.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cooking_steaks_2.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Katrin Morenz from Aachen, Deutschland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "notes": "Pan-seared steaks stand in for griddle-seared ribeye with tallow."
+  },
+  {
+    "recipeId": "crispy-beef-patties",
+    "localPath": "assets/images/recipes/crispy-beef-patties.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meat_rissoles._Easy_as_1-2-3_(2179666929).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Tanya Dropbear from Adelaide, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked patties cropped tightly from a larger plate."
+  },
+  {
+    "recipeId": "soft-scrambled-eggs-with-butter",
+    "localPath": "assets/images/recipes/soft-scrambled-eggs-with-butter.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scrambed_eggs.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Takeaway",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "notes": "Cropped tightly to scrambled eggs."
+  },
+  {
+    "recipeId": "pork-belly-bites",
+    "localPath": "assets/images/recipes/pork-belly-bites.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pork_Lechon_Belly.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "KDCwrites",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "notes": "Cooked pork belly visual match."
+  },
+  {
+    "recipeId": "salmon-in-butter",
+    "localPath": "assets/images/recipes/salmon-in-butter.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salmon_with_Lime_&_Garlic_Butter_(4437041010).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Ewan Munro from London, UK",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "notes": "Cropped tightly to cooked salmon; some rice remains visible."
+  },
+  {
+    "recipeId": "carnivore-flatbread",
+    "localPath": "assets/images/recipes/carnivore-flatbread.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cloud-bread-3529136.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "bluebudgie",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "notes": "Cloud bread is the closest licensed low-carb bread-like visual found."
+  },
+  {
+    "recipeId": "cottage-cheese-flatbread",
+    "localPath": "assets/images/recipes/cottage-cheese-flatbread.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cloud-bread-3529136.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "bluebudgie",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "notes": "Cloud bread is the closest licensed low-carb bread-like visual found."
+  },
+  {
+    "recipeId": "two-ingredient-carnivore-flatbread",
+    "localPath": "assets/images/recipes/two-ingredient-carnivore-flatbread.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cloud-bread-3529136.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "bluebudgie",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "notes": "Cloud bread is the closest licensed low-carb bread-like visual found."
+  },
+  {
+    "recipeId": "carnivore-burger-buns",
+    "localPath": "assets/images/recipes/carnivore-burger-buns.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cloud-bread-3529136.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "bluebudgie",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "notes": "Cloud bread/bun-like visual."
+  },
+  {
+    "recipeId": "air-fryer-meatballs",
+    "localPath": "assets/images/recipes/air-fryer-meatballs.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukune_(chicken_meatballs)_(16065642291).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Arnold Gatilao from Oakland, CA, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked meatball/skewer visual."
+  },
+  {
+    "recipeId": "carnivore-vanilla-ice-cream",
+    "localPath": "assets/images/recipes/carnivore-vanilla-ice-cream.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanilla_Ice_Cream_Cone_at_Camp_Manitoulin.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Steven Depolo",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cropped to the vanilla scoop; cone mostly excluded."
+  },
+  {
+    "recipeId": "egg-yolk-custard",
+    "localPath": "assets/images/recipes/egg-yolk-custard.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Custard.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "No machine-readable author provided. Interiot~commonswiki assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "notes": "Plain custard visual."
+  },
+  {
+    "recipeId": "mascarpone-cream-bowl",
+    "localPath": "assets/images/recipes/mascarpone-cream-bowl.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanilla_Ice_Cream_Cone_at_Camp_Manitoulin.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Steven Depolo",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cropped vanilla/cream scoop visual; approximate mascarpone bowl match."
+  },
+  {
+    "recipeId": "air-fryer-beef-meatballs",
+    "localPath": "assets/images/recipes/air-fryer-beef-meatballs.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukune_(chicken_meatballs)_(16065642291).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Arnold Gatilao from Oakland, CA, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked meatball/skewer visual."
+  },
+  {
+    "recipeId": "beef-and-pork-parmesan-meatballs",
+    "localPath": "assets/images/recipes/beef-and-pork-parmesan-meatballs.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukune_(chicken_meatballs)_(16065642291).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Arnold Gatilao from Oakland, CA, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked meatball/skewer visual."
+  },
+  {
+    "recipeId": "carnivore-smash-burger-bowl",
+    "localPath": "assets/images/recipes/carnivore-smash-burger-bowl.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meat_rissoles._Easy_as_1-2-3_(2179666929).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Tanya Dropbear from Adelaide, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked patties cropped tightly from a larger plate."
+  },
+  {
+    "recipeId": "minced-beef-and-egg-skillet",
+    "localPath": "assets/images/recipes/minced-beef-and-egg-skillet.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meat_rissoles._Easy_as_1-2-3_(2179666929).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Tanya Dropbear from Adelaide, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked beef patty visual; weaker match for mince and egg skillet."
+  },
+  {
+    "recipeId": "oven-carnivore-meatloaf",
+    "localPath": "assets/images/recipes/oven-carnivore-meatloaf.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meat_rissoles._Easy_as_1-2-3_(2179666929).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Tanya Dropbear from Adelaide, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked patty visual; weaker match because meatloaf source was not available."
+  },
+  {
+    "recipeId": "cheese-stuffed-beef-patties",
+    "localPath": "assets/images/recipes/cheese-stuffed-beef-patties.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meat_rissoles._Easy_as_1-2-3_(2179666929).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Tanya Dropbear from Adelaide, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked patties cropped tightly from a larger plate."
+  },
+  {
+    "recipeId": "beef-mince-breakfast-scramble",
+    "localPath": "assets/images/recipes/beef-mince-breakfast-scramble.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scrambed_eggs.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Takeaway",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "notes": "Egg-forward breakfast visual; weaker match for beef mince."
+  },
+  {
+    "recipeId": "air-fryer-kofta-style-beef-logs",
+    "localPath": "assets/images/recipes/air-fryer-kofta-style-beef-logs.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukune_(chicken_meatballs)_(16065642291).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Arnold Gatilao from Oakland, CA, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked skewer meat visual; approximate kofta match."
+  },
+  {
+    "recipeId": "pork-and-beef-burger-bites",
+    "localPath": "assets/images/recipes/pork-and-beef-burger-bites.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meat_rissoles._Easy_as_1-2-3_(2179666929).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Tanya Dropbear from Adelaide, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked patties cropped tightly from a larger plate."
+  },
+  {
+    "recipeId": "carnivore-mince-pizza-base",
+    "localPath": "assets/images/recipes/carnivore-mince-pizza-base.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meat_rissoles._Easy_as_1-2-3_(2179666929).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Tanya Dropbear from Adelaide, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked beef patty visual; weak match for mince pizza base."
+  },
+  {
+    "recipeId": "creamy-beef-mince-bowl",
+    "localPath": "assets/images/recipes/creamy-beef-mince-bowl.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meat_rissoles._Easy_as_1-2-3_(2179666929).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Tanya Dropbear from Adelaide, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked beef patty visual; weak match for creamy mince bowl."
+  },
+  {
+    "recipeId": "chocolate-style-carnivore-ice-cream",
+    "localPath": "assets/images/recipes/chocolate-style-carnivore-ice-cream.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chocolate_coffee_mousse.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Lu from Seattle, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Chocolate creamy dessert visual; approximate ice cream match."
+  },
+  {
+    "recipeId": "coffee-cream-ice-cream",
+    "localPath": "assets/images/recipes/coffee-cream-ice-cream.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chocolate_coffee_mousse.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Lu from Seattle, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Coffee/chocolate mousse visual; approximate ice cream match."
+  },
+  {
+    "recipeId": "mascarpone-ice-cream",
+    "localPath": "assets/images/recipes/mascarpone-ice-cream.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanilla_Ice_Cream_Cone_at_Camp_Manitoulin.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Steven Depolo",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cropped to the vanilla scoop; approximate mascarpone ice cream match."
+  },
+  {
+    "recipeId": "salted-butter-ice-cream",
+    "localPath": "assets/images/recipes/salted-butter-ice-cream.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanilla_Ice_Cream_Cone_at_Camp_Manitoulin.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Steven Depolo",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cropped to the vanilla scoop; approximate salted butter ice cream match."
+  },
+  {
+    "recipeId": "whipped-cream-cheese-bowl",
+    "localPath": "assets/images/recipes/whipped-cream-cheese-bowl.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanilla_Ice_Cream_Cone_at_Camp_Manitoulin.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Steven Depolo",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cropped vanilla/cream scoop visual; approximate whipped cream cheese bowl match."
+  },
+  {
+    "recipeId": "frozen-yogurt-style-carnivore-bowl",
+    "localPath": "assets/images/recipes/frozen-yogurt-style-carnivore-bowl.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanilla_Ice_Cream_Cone_at_Camp_Manitoulin.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Steven Depolo",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cropped vanilla/cream scoop visual; approximate frozen bowl match."
+  },
+  {
+    "recipeId": "cream-cheese-egg-pudding",
+    "localPath": "assets/images/recipes/cream-cheese-egg-pudding.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Custard.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "No machine-readable author provided. Interiot~commonswiki assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "notes": "Custard/pudding visual."
+  },
+  {
+    "recipeId": "air-fryer-egg-bites-with-cheese",
+    "localPath": "assets/images/recipes/air-fryer-egg-bites-with-cheese.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2750Onion_Cheese_Omelette_Sliced_cheese_12.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Judgefloro",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "notes": "Egg and cheese visual; approximate egg bites match."
+  },
+  {
+    "recipeId": "carnivore-omelette-with-cheese",
+    "localPath": "assets/images/recipes/carnivore-omelette-with-cheese.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2750Onion_Cheese_Omelette_Sliced_cheese_12.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Judgefloro",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "notes": "Omelette with cheese visual."
+  },
+  {
+    "recipeId": "baked-egg-and-cream-cups",
+    "localPath": "assets/images/recipes/baked-egg-and-cream-cups.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Custard.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "No machine-readable author provided. Interiot~commonswiki assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "notes": "Baked custard-like egg and cream visual."
+  },
+  {
+    "recipeId": "cottage-cheese-egg-bake",
+    "localPath": "assets/images/recipes/cottage-cheese-egg-bake.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2750Onion_Cheese_Omelette_Sliced_cheese_12.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Judgefloro",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "notes": "Egg and cheese visual; approximate egg bake match."
+  },
+  {
+    "recipeId": "carnivore-wrap-crepe",
+    "localPath": "assets/images/recipes/carnivore-wrap-crepe.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dan_Bing_(Taiwanese_egg_crepe).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Joy",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Egg crepe/wrap visual."
+  },
+  {
+    "recipeId": "air-fryer-chicken-thighs",
+    "localPath": "assets/images/recipes/air-fryer-chicken-thighs.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bacon-wrapped_Chicken_Breast2_(10508582914).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Michele Frazier from USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Cooked chicken visual; weak match because source is bacon-wrapped breast."
+  },
+  {
+    "recipeId": "oven-bacon-wrapped-chicken",
+    "localPath": "assets/images/recipes/oven-bacon-wrapped-chicken.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bacon-wrapped_Chicken_Breast2_(10508582914).jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Michele Frazier from USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "notes": "Bacon-wrapped chicken visual."
+  },
+  {
+    "recipeId": "pork-chops-with-butter",
+    "localPath": "assets/images/recipes/pork-chops-with-butter.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_pork_chops.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Roderick Su\u00f1az Sumalinog",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "notes": "Grilled pork chop visual."
+  },
+  {
+    "recipeId": "brown-butter-topping",
+    "localPath": "assets/images/recipes/brown-butter-topping.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_cheese_sauce.JPG",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Number55",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "notes": "Sauce-in-bowl visual; weak match for brown butter."
+  },
+  {
+    "recipeId": "parmesan-crust-topping",
+    "localPath": "assets/images/recipes/parmesan-crust-topping.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parmesan_Cheese_Parmigiano-Reggiano.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Amin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "notes": "Parmigiano-Reggiano cheese visual."
+  },
+  {
+    "recipeId": "cream-cheese-sauce",
+    "localPath": "assets/images/recipes/cream-cheese-sauce.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_cheese_sauce.JPG",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Number55",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "notes": "Cheese sauce visual; approximate cream cheese sauce match."
+  },
+  {
+    "recipeId": "beef-tallow-cooking-base",
+    "localPath": "assets/images/recipes/beef-tallow-cooking-base.webp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cooking_steaks_2.jpg",
+    "sourcePlatform": "Wikimedia Commons",
+    "author": "Katrin Morenz from Aachen, Deutschland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "notes": "Pan steak visual; weak match for tallow cooking base because exact tallow source was rate-limited."
+  }
+]

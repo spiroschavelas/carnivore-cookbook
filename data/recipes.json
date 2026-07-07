@@ -89,7 +89,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/blackstone-ribeye-with-beef-tallow.webp"
   },
   {
     "id": "crispy-beef-patties",
@@ -184,7 +184,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/crispy-beef-patties.webp"
   },
   {
     "id": "soft-scrambled-eggs-with-butter",
@@ -267,7 +267,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/soft-scrambled-eggs-with-butter.webp"
   },
   {
     "id": "pork-belly-bites",
@@ -350,7 +350,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/pork-belly-bites.webp"
   },
   {
     "id": "salmon-in-butter",
@@ -440,7 +440,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/salmon-in-butter.webp"
   },
   {
     "id": "carnivore-flatbread",
@@ -531,7 +531,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/carnivore-flatbread.webp"
   },
   {
     "id": "cottage-cheese-flatbread",
@@ -620,7 +620,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/cottage-cheese-flatbread.webp"
   },
   {
     "id": "two-ingredient-carnivore-flatbread",
@@ -710,7 +710,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/two-ingredient-carnivore-flatbread.webp"
   },
   {
     "id": "carnivore-burger-buns",
@@ -802,7 +802,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/carnivore-burger-buns.webp"
   },
   {
     "id": "air-fryer-meatballs",
@@ -893,7 +893,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/air-fryer-meatballs.webp"
   },
   {
     "id": "carnivore-vanilla-ice-cream",
@@ -986,7 +986,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/carnivore-vanilla-ice-cream.webp"
   },
   {
     "id": "egg-yolk-custard",
@@ -1086,7 +1086,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/egg-yolk-custard.webp"
   },
   {
     "id": "mascarpone-cream-bowl",
@@ -1171,7 +1171,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/mascarpone-cream-bowl.webp"
   },
   {
     "id": "air-fryer-beef-meatballs",
@@ -1263,7 +1263,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/air-fryer-beef-meatballs.webp"
   },
   {
     "id": "beef-and-pork-parmesan-meatballs",
@@ -1367,7 +1367,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/beef-and-pork-parmesan-meatballs.webp"
   },
   {
     "id": "carnivore-smash-burger-bowl",
@@ -1473,7 +1473,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/carnivore-smash-burger-bowl.webp"
   },
   {
     "id": "minced-beef-and-egg-skillet",
@@ -1566,7 +1566,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/minced-beef-and-egg-skillet.webp"
   },
   {
     "id": "oven-carnivore-meatloaf",
@@ -1664,7 +1664,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/oven-carnivore-meatloaf.webp"
   },
   {
     "id": "cheese-stuffed-beef-patties",
@@ -1762,7 +1762,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/cheese-stuffed-beef-patties.webp"
   },
   {
     "id": "beef-mince-breakfast-scramble",
@@ -1862,7 +1862,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/beef-mince-breakfast-scramble.webp"
   },
   {
     "id": "air-fryer-kofta-style-beef-logs",
@@ -1952,7 +1952,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/air-fryer-kofta-style-beef-logs.webp"
   },
   {
     "id": "pork-and-beef-burger-bites",
@@ -2048,7 +2048,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/pork-and-beef-burger-bites.webp"
   },
   {
     "id": "carnivore-mince-pizza-base",
@@ -2147,7 +2147,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/carnivore-mince-pizza-base.webp"
   },
   {
     "id": "creamy-beef-mince-bowl",
@@ -2254,7 +2254,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/creamy-beef-mince-bowl.webp"
   },
   {
     "id": "chocolate-style-carnivore-ice-cream",
@@ -2355,7 +2355,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/chocolate-style-carnivore-ice-cream.webp"
   },
   {
     "id": "coffee-cream-ice-cream",
@@ -2449,7 +2449,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/coffee-cream-ice-cream.webp"
   },
   {
     "id": "mascarpone-ice-cream",
@@ -2540,7 +2540,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/mascarpone-ice-cream.webp"
   },
   {
     "id": "salted-butter-ice-cream",
@@ -2634,7 +2634,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/salted-butter-ice-cream.webp"
   },
   {
     "id": "whipped-cream-cheese-bowl",
@@ -2719,7 +2719,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/whipped-cream-cheese-bowl.webp"
   },
   {
     "id": "frozen-yogurt-style-carnivore-bowl",
@@ -2804,7 +2804,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/frozen-yogurt-style-carnivore-bowl.webp"
   },
   {
     "id": "cream-cheese-egg-pudding",
@@ -2893,7 +2893,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/cream-cheese-egg-pudding.webp"
   },
   {
     "id": "air-fryer-egg-bites-with-cheese",
@@ -2984,7 +2984,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/air-fryer-egg-bites-with-cheese.webp"
   },
   {
     "id": "carnivore-omelette-with-cheese",
@@ -3073,7 +3073,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/carnivore-omelette-with-cheese.webp"
   },
   {
     "id": "baked-egg-and-cream-cups",
@@ -3164,7 +3164,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/baked-egg-and-cream-cups.webp"
   },
   {
     "id": "cottage-cheese-egg-bake",
@@ -3261,7 +3261,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/cottage-cheese-egg-bake.webp"
   },
   {
     "id": "carnivore-wrap-crepe",
@@ -3357,7 +3357,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/carnivore-wrap-crepe.webp"
   },
   {
     "id": "air-fryer-chicken-thighs",
@@ -3446,7 +3446,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/air-fryer-chicken-thighs.webp"
   },
   {
     "id": "oven-bacon-wrapped-chicken",
@@ -3541,7 +3541,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/oven-bacon-wrapped-chicken.webp"
   },
   {
     "id": "pork-chops-with-butter",
@@ -3632,7 +3632,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/pork-chops-with-butter.webp"
   },
   {
     "id": "brown-butter-topping",
@@ -3707,7 +3707,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/brown-butter-topping.webp"
   },
   {
     "id": "parmesan-crust-topping",
@@ -3793,7 +3793,7 @@
         ]
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/parmesan-crust-topping.webp"
   },
   {
     "id": "cream-cheese-sauce",
@@ -3883,7 +3883,7 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/cream-cheese-sauce.webp"
   },
   {
     "id": "beef-tallow-cooking-base",
@@ -3968,6 +3968,6 @@
         "instructions": []
       }
     },
-    "image": ""
+    "image": "assets/images/recipes/beef-tallow-cooking-base.webp"
   }
 ]
