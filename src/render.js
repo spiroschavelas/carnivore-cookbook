@@ -34,6 +34,7 @@ export function renderRecipeDetail(container, recipe, isFavourite) {
       <p>${formatMeta(recipe)}</p>
       <p>${isFavourite ? "Saved as favourite" : "Not saved as favourite"}</p>
     </header>
+    ${recipeImageMarkup(recipe, "detail-image-frame")}
     <section class="recommended-box">
       <h3>${escapeHtml(recommendationHeading(recipe))}</h3>
       <p>${escapeHtml(recommendedReason(recipe))}</p>
@@ -104,6 +105,7 @@ export function recipeCardMarkup(recipe, isFavourite) {
     .join(", ");
 
   return `
+    ${recipeImageMarkup(recipe, "card-image-frame")}
     <div class="card-top">
       <div>
         <p class="eyebrow">${escapeHtml(recipe.chapter || recipe.category)}</p>
@@ -119,6 +121,18 @@ export function recipeCardMarkup(recipe, isFavourite) {
     <p class="method-summary"><strong>Methods:</strong> ${escapeHtml(availableMethods || "None listed")}</p>
     <p class="tag-row">${recipe.tags.slice(0, 4).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</p>
     <button class="text-button" type="button" data-action="view">View recipe</button>
+  `;
+}
+
+function recipeImageMarkup(recipe, className) {
+  if (!recipe.image) return "";
+  const imagePath = escapeHtml(recipe.image);
+  const altText = escapeHtml(recipe.title);
+  return `
+    <div class="recipe-image-frame ${className}">
+      <img src="${imagePath}" alt="${altText}" loading="lazy" decoding="async" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+      <span class="recipe-image-placeholder" hidden>No image available</span>
+    </div>
   `;
 }
 

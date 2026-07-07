@@ -54,6 +54,11 @@ button:hover { background: var(--rust-dark); }
 .summary-panel dd { margin: 0.2rem 0 0; font-size: 1.7rem; }
 .recipe-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1rem; }
 .recipe-card { background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 1rem; min-height: 260px; display: flex; flex-direction: column; gap: 0.8rem; }
+.recipe-image-frame { background: #ddcbb4; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; position: relative; width: 100%; aspect-ratio: 16 / 9; }
+.recipe-image-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.card-image-frame { margin: -0.25rem -0.25rem 0; }
+.detail-image-frame { margin: 0 0 1rem; }
+.recipe-image-placeholder { align-items: center; color: var(--muted); display: flex; font-size: 0.92rem; height: 100%; justify-content: center; padding: 1rem; text-align: center; }
 .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; }
 .card-top h2 { font-size: 1.35rem; line-height: 1.15; margin-bottom: 0; }
 .icon-button { min-width: 58px; flex: 0 0 auto; padding: 0 0.55rem; background: var(--charcoal); color: var(--cream); font-size: 0.82rem; }
