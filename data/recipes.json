@@ -3969,5 +3969,102 @@
       }
     },
     "image": "assets/images/recipes/beef-tallow-cooking-base.webp"
+  },
+  {
+    "id": "whole-dorade-with-ghee-and-salt",
+    "title": "Whole Dorade with Ghee & Salt",
+    "chapter": "Seafood",
+    "category": "seafood",
+    "description": "Whole dorade cooked simply with ghee and salt, with dedicated COSORI Turbo Tower, oven, and Blackstone instructions.",
+    "strictness": "animal-based",
+    "reason_not_strict": "Includes ghee, which is dairy-derived.",
+    "dairy": "included",
+    "dairyLevel": "included",
+    "equipment": [
+      "COSORI Turbo Tower Pro Smart air fryer",
+      "oven",
+      "36-inch Blackstone",
+      "instant-read thermometer"
+    ],
+    "time_minutes": 25,
+    "prepTimeMinutes": 5,
+    "difficulty": "easy",
+    "baseServings": 1,
+    "servings": 1,
+    "ingredients": [
+      {
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "whole dorade, 350 to 450 g, cleaned and scaled",
+        "original": "1 whole dorade, 350 to 450 g, cleaned and scaled"
+      },
+      {
+        "quantity": 15,
+        "unit": "g",
+        "item": "ghee",
+        "original": "15 g ghee"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Pat the dorade very dry inside and out.",
+      "Make 2 to 3 shallow diagonal cuts on each side.",
+      "Salt inside the cavity and over the outside.",
+      "Rub the outside lightly with ghee."
+    ],
+    "notes": "Zone 2, the lower 6.5 L basket, is preferred. Zone 1, the upper 4.3 L basket, needs a halfway turn. For two dorades, use one fish per basket. Cooking times are guides because fish thickness and weight vary; check the thickest part and cook to at least 63 C. The serving scaler changes ingredient quantities but does not mean multiple whole fish will physically fit in one basket.",
+    "tags": [
+      "seafood",
+      "air fryer",
+      "oven",
+      "blackstone",
+      "dairy"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The COSORI lower Zone 2 uses Dual Blaze heating for the most even whole-fish result with minimal handling, while Zone 1 can run in parallel when cooking two dorades.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "good",
+        "note": "Good for a larger fish or when cooking more than two.",
+        "instructions": [
+          "Heat the fan oven to 200 C.",
+          "Place the dorade on a rack or lined tray.",
+          "Roast a 350 to 450 g fish for about 18 to 20 minutes.",
+          "Check the thickest part reaches at least 63 C; add time in 2-minute increments if needed."
+        ]
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Zone 2 is preferred. Zone 1 is fully supported for a second fish and requires turning halfway.",
+        "instructions": [
+          "Zone 2, lower 6.5 L basket: fit the crisper plate and place one 350 to 450 g dorade diagonally.",
+          "Cook on GRILL at 180 C for about 14 to 18 minutes. Dual Blaze means no routine flip is needed; check from 14 minutes and add time as required.",
+          "Zone 1, upper 4.3 L basket: place one dorade on the crisper plate and cook on GRILL at 180 C for about 16 to 20 minutes.",
+          "Turn the Zone 1 fish carefully halfway, around 8 to 10 minutes, then continue until done.",
+          "For two dorades at once, put one in each basket. A practical starting setup is Zone 1 for 18 minutes with a halfway turn and Zone 2 for 16 minutes; use SYNC so they finish together.",
+          "Check the thickest part of each fish and cook to at least 63 C. Treat time as a guide because size and thickness vary."
+        ]
+      },
+      "blackstone": {
+        "available": true,
+        "quality": "good",
+        "note": "Use a clean, lightly greased surface with a medium zone and a cooler finishing zone.",
+        "instructions": [
+          "Heat one Blackstone zone to medium and keep an adjacent zone a little lower.",
+          "Spread a very thin layer of ghee on the cooking surface.",
+          "Cook the dorade for about 5 to 7 minutes on the first side without moving it repeatedly.",
+          "Flip carefully with a wide fish spatula and cook another 5 to 7 minutes.",
+          "If the outside is browned before the center is ready, move the fish to the cooler zone and finish until the thickest part reaches at least 63 C."
+        ]
+      }
+    },
+    "image": "assets/images/recipes/whole-dorade-with-ghee-and-salt.webp"
   }
 ]
