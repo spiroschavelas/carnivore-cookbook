@@ -1,4 +1,4 @@
-const STRICTNESS = new Set(["strict", "animal-based", "practical"]);
+const STRICTNESS = new Set(["strict", "animal-based", "practical", "non-carnivore"]);
 const DAIRY = new Set(["none", "optional", "included", "heavy"]);
 const DIFFICULTY = new Set(["easy", "medium", "hard"]);
 const METHODS = ["oven", "airFryer", "blackstone"];
@@ -112,7 +112,7 @@ export function validateRecipe(recipe) {
   if (!recipe.title) errors.push("Title is required.");
   if (!recipe.category && !recipe.chapter) errors.push("Chapter/category is required.");
   if (!recipe.description) errors.push("Description is required.");
-  if (!STRICTNESS.has(recipe.strictness)) errors.push("Strictness must be strict, animal-based, or practical.");
+  if (!STRICTNESS.has(recipe.strictness)) errors.push("Strictness must be strict, animal-based, practical, or non-carnivore.");
   if (recipe.strictness !== "strict" && !recipe.reason_not_strict) errors.push("Reason not strict is required unless strictness is strict.");
   if (recipe.strictness === "strict" && recipe.reason_not_strict) errors.push("Reason not strict should be blank for strict recipes.");
   if (!DAIRY.has(recipe.dairy)) errors.push("Dairy must be none, optional, included, or heavy.");
