@@ -5,6 +5,7 @@ const METHOD_LABELS = {
 };
 
 const APPLIANCE_METHODS = ["oven", "airFryer", "blackstone"];
+const OTHER_METHOD = "other";
 
 export function renderRecipeCards(container, recipes, favourites, handlers) {
   container.innerHTML = "";
@@ -35,11 +36,7 @@ export function renderRecipeDetail(container, recipe, isFavourite) {
       <p>${isFavourite ? "Saved as favourite" : "Not saved as favourite"}</p>
     </header>
     ${recipeImageMarkup(recipe, "detail-image-frame")}
-    <section class="recommended-box">
-      <h3>${escapeHtml(recommendationHeading(recipe))}</h3>
-      <p>${escapeHtml(recommendedReason(recipe))}</p>
-      ${recommendedInstructionsMarkup(recipe)}
-    </section>
+    ${recommendedBoxMarkup(recipe)}
     ${recipe.reason_not_strict ? `<p class="notice">Practical note: ${escapeHtml(recipe.reason_not_strict)}</p>` : ""}
     <section class="ingredients-section">
       <div class="section-heading-row">
@@ -59,8 +56,9 @@ export function renderRecipeDetail(container, recipe, isFavourite) {
     <section class="method-section">
       <h3>Cooking method</h3>
       <div class="method-tabs" role="tablist" aria-label="Cooking methods">
-        ${APPLIANCE_METHODS.map((method) => methodButtonMarkup(recipe, method, selectedMethod)).join("")}
+        ${visibleMethodChoices(recipe).map((method) => methodButtonMarkup(recipe, method, selectedMethod)).join("")}
       </div>
+      ${unsuitableMethodsMarkup(recipe)}
       <div id="method-detail"></div>
     </section>
     ${recipe.notes ? `<section><h3>Notes</h3><p>${escapeHtml(recipe.notes)}</p><p class="scale-note">Cooking time may need adjustment for larger batches.</p></section>` : ""}
@@ -99,9 +97,8 @@ export function renderRecipeDetail(container, recipe, isFavourite) {
 }
 
 export function recipeCardMarkup(recipe, isFavourite) {
-  const availableMethods = APPLIANCE_METHODS
-    .filter((method) => isUsableMethod(recipe.methods?.[method]))
-    .map((method) => methodLabel(method))
+  const availableMethods = visibleMethodChoices(recipe)
+    .map((method) => choiceLabel(recipe, method))
     .join(", ");
 
   return `
@@ -165,6 +162,18 @@ export function formatIngredient(ingredient, ratio) {
 }
 
 function methodDetailMarkup(recipe, method) {
+  if (method === OTHER_METHOD) {
+    const recommendation = recipe.recommendedMethod;
+    return `
+      <article class="method-detail">
+        <p><strong>${escapeHtml(recommendation.label || "Other method")}</strong></p>
+        <p>${escapeHtml(recommendation.reason || "")}</p>
+        ${recommendation.instructions?.length
+          ? `<ol>${recommendation.instructions.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`
+          : `<p>No cooking instructions for this method.</p>`}
+      </article>
+    `;
+  }
   const methodData = recipe.methods?.[method] || { quality: "unavailable", note: "No instructions available.", instructions: [] };
   const warning = methodData.quality === "notRecommended" || methodData.quality === "unavailable";
   return `
@@ -179,18 +188,50 @@ function methodDetailMarkup(recipe, method) {
 }
 
 function methodButtonMarkup(recipe, method, selectedMethod) {
-  const methodData = recipe.methods?.[method] || { quality: "unavailable" };
-  const disabled = methodData.quality === "unavailable" ? "" : "";
-  return `<button type="button" class="method-tab" data-method="${method}" aria-selected="${method === selectedMethod}" ${disabled}>${methodLabel(method)}</button>`;
+  return `<button type="button" class="method-tab" data-method="${method}" aria-selected="${method === selectedMethod}">${escapeHtml(choiceLabel(recipe, method))}</button>`;
 }
 
 function initialSelectedMethod(recipe) {
+  if (isOtherRecommendation(recipe)) return OTHER_METHOD;
   if (APPLIANCE_METHODS.includes(recipe.recommendedMethod)) return recipe.recommendedMethod;
-  return APPLIANCE_METHODS.find((method) => isUsableMethod(recipe.methods?.[method])) || "oven";
+  return APPLIANCE_METHODS.find((method) => isUsableMethod(recipe.methods?.[method]));
+}
+
+function visibleMethodChoices(recipe) {
+  return [
+    ...(isOtherRecommendation(recipe) ? [OTHER_METHOD] : []),
+    ...APPLIANCE_METHODS.filter((method) => isUsableMethod(recipe.methods?.[method]))
+  ];
+}
+
+function unsuitableMethodsMarkup(recipe) {
+  const unsuitable = APPLIANCE_METHODS
+    .filter((method) => !isUsableMethod(recipe.methods?.[method]))
+    .map((method) => methodLabel(method));
+  return unsuitable.length ? `<p class="method-summary">Not suitable for: ${escapeHtml(unsuitable.join(", "))}</p>` : "";
+}
+
+function choiceLabel(recipe, method) {
+  return method === OTHER_METHOD ? recommendedLabel(recipe) : methodLabel(method);
+}
+
+function isOtherRecommendation(recipe) {
+  return recipe.recommendedMethod && typeof recipe.recommendedMethod === "object" && recipe.recommendedMethod.type === OTHER_METHOD;
 }
 
 function recommendationHeading(recipe) {
   return `Recommended method: ${recommendedLabel(recipe)}`;
+}
+
+function recommendedBoxMarkup(recipe) {
+  if (isOtherRecommendation(recipe)) return "";
+  return `
+    <section class="recommended-box">
+      <h3>${escapeHtml(recommendationHeading(recipe))}</h3>
+      <p>${escapeHtml(recommendedReason(recipe))}</p>
+      ${recommendedInstructionsMarkup(recipe)}
+    </section>
+  `;
 }
 
 function recommendedLabel(recipe) {
