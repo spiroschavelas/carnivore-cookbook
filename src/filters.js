@@ -27,7 +27,7 @@ export function buildFilterOptions(recipes) {
       { label: "Blackstone", value: "blackstone" },
       { label: "Other method", value: "other" }
     ],
-    strictness: ["strict", "animal-based", "practical"],
+    strictness: ["strict", "animal-based", "practical", "non-carnivore"],
     equipment: uniqueSorted(recipes.flatMap((recipe) => recipe.equipment)),
     tags: uniqueSorted(recipes.flatMap((recipe) => recipe.tags)),
     dairy: ["none", "optional", "included", "heavy"],
