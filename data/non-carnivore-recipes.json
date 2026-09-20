@@ -1,0 +1,265 @@
+[
+  {
+    "id": "kalamarakia-air-fryer-argiro",
+    "title": "Καλαμαράκια στο air fryer",
+    "chapter": "Non-carnivore",
+    "category": "non-carnivore",
+    "description": "Air-fryer squid with a light semolina and breadcrumb coating, based on the linked Argiro recipe.",
+    "strictness": "non-carnivore",
+    "reason_not_strict": "Uses semolina and breadcrumbs or flour, plus parsley and olive oil.",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "COSORI Turbo Tower Pro Smart air fryer"
+    ],
+    "time_minutes": 22,
+    "prepTimeMinutes": 10,
+    "difficulty": "easy",
+    "baseServings": 3,
+    "servings": 3,
+    "ingredients": [
+      {
+        "quantity": 500,
+        "unit": "g",
+        "item": "cleaned squid",
+        "original": "500 g cleaned squid"
+      },
+      {
+        "quantity": 2,
+        "unit": "tbsp",
+        "item": "fine semolina",
+        "original": "2 tbsp fine semolina"
+      },
+      {
+        "quantity": 2,
+        "unit": "tbsp",
+        "item": "finely ground breadcrumbs or flour",
+        "original": "2 tbsp finely ground breadcrumbs or flour"
+      },
+      {
+        "quantity": 0.5,
+        "unit": "tsp",
+        "item": "dried parsley",
+        "original": "1/2 tsp dried parsley"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "olive oil spray",
+        "original": "olive oil spray"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      }
+    ],
+    "steps": [
+      "Dry the squid thoroughly and cut it into rings.",
+      "Mix the coating ingredients and coat the squid lightly, shaking off the excess.",
+      "Preheat the air fryer to 200 C for 3 minutes.",
+      "Arrange the squid with space between pieces, spray lightly with olive oil, and cook for about 12 minutes at 200 C.",
+      "Mix once halfway through. For better crispness, cook in two batches."
+    ],
+    "notes": "Source: Argiro, linked by the user.",
+    "tags": [
+      "air fryer",
+      "calamari",
+      "greek",
+      "non-carnivore",
+      "seafood"
+    ],
+    "recommendedMethod": "airFryer",
+    "recommendedReason": "The source recipe is designed for air-fryer cooking.",
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "No oven method is specified in the source recipe.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": true,
+        "quality": "best",
+        "note": "Cook in two batches when needed for better crispness.",
+        "instructions": [
+          "Preheat to 200 C for 3 minutes.",
+          "Cook for about 12 minutes at 200 C.",
+          "Mix once halfway through."
+        ]
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "The source recipe is intended for the air fryer.",
+        "instructions": []
+      }
+    },
+    "image": ""
+  },
+  {
+    "id": "giouvarlakia-avgolemono-argiro",
+    "title": "Γιουβαρλάκια αυγολέμονο",
+    "chapter": "Non-carnivore",
+    "category": "non-carnivore",
+    "description": "Greek beef-and-rice meatball soup finished with avgolemono, based on the linked Argiro recipe.",
+    "strictness": "non-carnivore",
+    "reason_not_strict": "Includes rice, vegetables, cornflour and olive oil.",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "large saucepan",
+      "mixing bowls",
+      "whisk"
+    ],
+    "time_minutes": 50,
+    "prepTimeMinutes": 20,
+    "difficulty": "easy",
+    "baseServings": 6,
+    "servings": 6,
+    "ingredients": [
+      {
+        "quantity": 500,
+        "unit": "g",
+        "item": "beef mince",
+        "original": "500 g beef mince"
+      },
+      {
+        "quantity": 1,
+        "unit": "eggs",
+        "item": "egg",
+        "original": "1 egg"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "onion",
+        "original": "onion"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "carrot",
+        "original": "carrot"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "olive oil",
+        "original": "olive oil"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "Carolina or glace rice",
+        "original": "Carolina or glace rice"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "dill",
+        "original": "dill"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "parsley",
+        "original": "parsley"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "celeriac",
+        "original": "celeriac"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "potato",
+        "original": "potato"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "leek",
+        "original": "leek"
+      },
+      {
+        "quantity": 2,
+        "unit": "eggs",
+        "item": "eggs for avgolemono",
+        "original": "2 eggs for avgolemono"
+      },
+      {
+        "quantity": 2,
+        "unit": "pieces",
+        "item": "lemons",
+        "original": "2 lemons"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "cornflour",
+        "original": "cornflour"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt and pepper",
+        "original": "salt and pepper"
+      }
+    ],
+    "steps": [
+      "Soak, rinse and drain the rice.",
+      "Mix the meatball ingredients thoroughly and shape into walnut-sized balls.",
+      "Saute the soup vegetables briefly, add hot water and bring to the boil.",
+      "Add the meatballs, cover, reduce the heat and simmer for about 25 to 30 minutes.",
+      "Mix lemon juice with cornflour and beat the eggs separately.",
+      "Temper the egg-lemon mixture gradually with hot broth, then return it gently to the saucepan without hard boiling.",
+      "Finish with dill and adjust seasoning."
+    ],
+    "notes": "Cornflour is useful if the dish will be reheated because it helps reduce the risk of the avgolemono splitting. Source: Argiro, linked by the user.",
+    "tags": [
+      "beef",
+      "family",
+      "greek",
+      "lemon",
+      "meatballs",
+      "non-carnivore",
+      "rice",
+      "soup"
+    ],
+    "recommendedMethod": {
+      "type": "other",
+      "label": "Stovetop saucepan",
+      "reason": "The dish is a simmered soup finished with avgolemono and needs controlled stovetop heat.",
+      "instructions": [
+        "Simmer the meatballs in the soup for 25 to 30 minutes.",
+        "Temper the avgolemono with hot broth.",
+        "Return it gently to the pot without hard boiling."
+      ]
+    },
+    "methods": {
+      "oven": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "The dish depends on stovetop simmering and tempering.",
+        "instructions": []
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "An air fryer cannot produce the soup or avgolemono finish.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "A flat griddle is not suitable for this soup.",
+        "instructions": []
+      }
+    },
+    "image": "assets/images/recipes/giouvarlakia-avgolemono-argiro.webp"
+  }
+]
