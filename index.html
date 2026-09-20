@@ -23,6 +23,11 @@
     </header>
 
     <main class="app-shell">
+      <nav class="section-switcher" aria-label="Recipe section">
+        <button class="section-tab active" type="button" data-section="carnivore" aria-pressed="true">Carnivore</button>
+        <button class="section-tab" type="button" data-section="non-carnivore" aria-pressed="false">Non-carnivore</button>
+      </nav>
+
       <section class="toolbar" aria-label="Recipe search and filters">
         <label class="search-box" for="search-input">
           <span>Search recipes</span>
@@ -50,7 +55,7 @@
 
       <section class="content-grid">
         <aside class="summary-panel" aria-label="Cookbook summary">
-          <h2>Library</h2>
+          <h2 id="library-title">Carnivore</h2>
           <dl>
             <div><dt>Total recipes</dt><dd id="total-count">0</dd></div>
             <div><dt>Showing</dt><dd id="visible-count">0</dd></div>
