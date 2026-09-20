@@ -62,7 +62,7 @@
       "Arrange the squid with space between pieces, spray lightly with olive oil, and cook for about 12 minutes at 200 C.",
       "Mix once halfway through. For better crispness, cook in two batches."
     ],
-    "notes": "Source: Argiro, linked by the user.",
+    "notes": "For a crisper result, cook in two batches. Source: https://www.argiro.gr/recipe/kalamarakia-sto-air-fryer/",
     "tags": [
       "air fryer",
       "calamari",
@@ -132,94 +132,131 @@
         "original": "1 egg"
       },
       {
-        "quantity": null,
-        "unit": "",
-        "item": "onion",
-        "original": "onion"
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "medium dry onion, grated or very finely chopped",
+        "original": "1 medium dry onion"
+      },
+      {
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "carrot, finely grated",
+        "original": "1 finely grated carrot"
       },
       {
         "quantity": null,
         "unit": "",
-        "item": "carrot",
-        "original": "carrot"
+        "item": "1/4 cup olive oil",
+        "original": "1/4 cup olive oil"
       },
       {
         "quantity": null,
         "unit": "",
-        "item": "olive oil",
-        "original": "olive oil"
+        "item": "1/4 cup Carolina or glace rice",
+        "original": "1/4 cup Carolina or glace rice"
+      },
+      {
+        "quantity": 2,
+        "unit": "tbsp",
+        "item": "finely chopped dill",
+        "original": "2 tbsp finely chopped dill"
+      },
+      {
+        "quantity": 2,
+        "unit": "tbsp",
+        "item": "finely chopped parsley",
+        "original": "2 tbsp finely chopped parsley"
       },
       {
         "quantity": null,
         "unit": "",
-        "item": "Carolina or glace rice",
-        "original": "Carolina or glace rice"
+        "item": "salt to taste",
+        "original": "salt to taste"
       },
       {
         "quantity": null,
         "unit": "",
-        "item": "dill",
-        "original": "dill"
+        "item": "freshly ground pepper to taste",
+        "original": "freshly ground pepper to taste"
+      },
+      {
+        "quantity": 4,
+        "unit": "tbsp",
+        "item": "olive oil for the soup",
+        "original": "4 tbsp olive oil"
+      },
+      {
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "carrot, cut into small dice",
+        "original": "1 carrot"
+      },
+      {
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "small celeriac, about 300 g, cut into small dice",
+        "original": "1 small celeriac, about 300 g"
+      },
+      {
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "potato, cut into small dice",
+        "original": "1 potato"
+      },
+      {
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "leek, finely chopped",
+        "original": "1 leek"
       },
       {
         "quantity": null,
         "unit": "",
-        "item": "parsley",
-        "original": "parsley"
-      },
-      {
-        "quantity": null,
-        "unit": "",
-        "item": "celeriac",
-        "original": "celeriac"
-      },
-      {
-        "quantity": null,
-        "unit": "",
-        "item": "potato",
-        "original": "potato"
-      },
-      {
-        "quantity": null,
-        "unit": "",
-        "item": "leek",
-        "original": "leek"
+        "item": "1.5 L hot water",
+        "original": "1.5 L hot water"
       },
       {
         "quantity": 2,
         "unit": "eggs",
         "item": "eggs for avgolemono",
-        "original": "2 eggs for avgolemono"
+        "original": "2 eggs"
       },
       {
         "quantity": 2,
         "unit": "pieces",
-        "item": "lemons",
-        "original": "2 lemons"
+        "item": "medium lemons",
+        "original": "2 medium lemons"
       },
       {
-        "quantity": null,
-        "unit": "",
+        "quantity": 1,
+        "unit": "tbsp",
         "item": "cornflour",
-        "original": "cornflour"
+        "original": "1 tbsp cornflour"
       },
       {
         "quantity": null,
         "unit": "",
-        "item": "salt and pepper",
-        "original": "salt and pepper"
+        "item": "a little finely chopped dill for finishing",
+        "original": "a little finely chopped dill"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "freshly ground pepper to taste",
+        "original": "freshly ground pepper to taste"
       }
     ],
     "steps": [
-      "Soak, rinse and drain the rice.",
-      "Mix the meatball ingredients thoroughly and shape into walnut-sized balls.",
-      "Saute the soup vegetables briefly, add hot water and bring to the boil.",
-      "Add the meatballs, cover, reduce the heat and simmer for about 25 to 30 minutes.",
-      "Mix lemon juice with cornflour and beat the eggs separately.",
-      "Temper the egg-lemon mixture gradually with hot broth, then return it gently to the saucepan without hard boiling.",
-      "Finish with dill and adjust seasoning."
+      "Soak the rice in plenty of water while preparing the other ingredients, then rinse and drain it well.",
+      "Combine the mince, egg, rice, onion, grated carrot, olive oil, herbs, salt and pepper. Knead thoroughly, then shape into walnut-sized meatballs.",
+      "Cut the soup vegetables into similarly sized small dice. Heat the olive oil in a saucepan and saute the vegetables for 2 to 3 minutes.",
+      "Add the hot water and bring to the boil. Add the meatballs, season, cover, reduce the heat and simmer for 25 to 30 minutes.",
+      "At the end, reduce the heat to very low and let the vigorous boiling settle.",
+      "Mix the lemon juice with the cornflour. In a separate bowl, whisk the egg whites to soft peaks, then whisk in the yolks.",
+      "Temper the egg mixture with hot broth and the lemon-cornflour mixture, then return it gently to the pot without hard boiling.",
+      "Finish with a little finely chopped dill and adjust the seasoning."
     ],
-    "notes": "Cornflour is useful if the dish will be reheated because it helps reduce the risk of the avgolemono splitting. Source: Argiro, linked by the user.",
+    "notes": "Cornflour is especially useful if the dish will be reheated, which should be done over very low heat, because it helps reduce the risk of the avgolemono splitting. Source: https://www.argiro.gr/recipe/giouvarlakia-avgolemono/",
     "tags": [
       "beef",
       "family",
