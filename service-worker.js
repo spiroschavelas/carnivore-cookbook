@@ -1,4 +1,4 @@
-const CACHE_NAME = "carnivore-cookbook-v5";
+const CACHE_NAME = "carnivore-cookbook-v6";
 const ASSETS = [
   "index.html",
   "studio.html",
@@ -13,10 +13,11 @@ const ASSETS = [
   "src/storage.js",
   "src/validation.js",
   "data/recipes.json",
+  "data/non-carnivore-recipes.json",
   "data/categories.json",
   "data/tags.json"
 ];
-const DATA_PATHS = new Set(["data/recipes.json", "data/categories.json", "data/tags.json"]);
+const DATA_PATHS = new Set(["data/recipes.json", "data/non-carnivore-recipes.json", "data/categories.json", "data/tags.json"]);
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS)));

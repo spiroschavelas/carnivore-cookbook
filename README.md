@@ -1,6 +1,6 @@
 # Carnivore Cookbook
 
-Static personal carnivore recipe cookbook with searchable recipes and recipe studio.
+Static personal recipe cookbook focused on carnivore cooking, with a clearly separated non-carnivore section and recipe studio.
 
 Published site: https://spiroschavelas.github.io/carnivore-cookbook/
 

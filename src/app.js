@@ -27,9 +27,17 @@ init();
 
 async function init() {
   try {
-    const response = await fetch("data/recipes.json");
-    if (!response.ok) throw new Error(`Recipe data failed to load: ${response.status}`);
-    state.recipes = await response.json();
+    const [carnivoreResponse, nonCarnivoreResponse] = await Promise.all([
+      fetch("data/recipes.json"),
+      fetch("data/non-carnivore-recipes.json")
+    ]);
+    if (!carnivoreResponse.ok) throw new Error(`Recipe data failed to load: ${carnivoreResponse.status}`);
+    if (!nonCarnivoreResponse.ok) throw new Error(`Non-carnivore recipe data failed to load: ${nonCarnivoreResponse.status}`);
+    const [carnivoreRecipes, nonCarnivoreRecipes] = await Promise.all([
+      carnivoreResponse.json(),
+      nonCarnivoreResponse.json()
+    ]);
+    state.recipes = [...carnivoreRecipes, ...nonCarnivoreRecipes];
 
     const validationErrors = validateRecipeCollection(state.recipes);
     if (validationErrors.length) {

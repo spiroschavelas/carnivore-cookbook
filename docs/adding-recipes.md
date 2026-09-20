@@ -34,5 +34,6 @@ Put recipe images in `assets/images/recipes/` and set the recipe `image` field t
 - Keep recipe IDs stable after publishing.
 - Use existing category and tag names where possible.
 - Keep strict recipes free from `reason_not_strict`.
-- Add a clear `reason_not_strict` for animal-based or practical recipes.
+- Add a clear `reason_not_strict` for animal-based, practical, or non-carnivore recipes.
+- Put intentionally non-carnivore recipes in the `Non-carnivore` chapter and `non-carnivore` category.
 - Do not include medical, weight-loss, or health claims.

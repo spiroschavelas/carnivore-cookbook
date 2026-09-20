@@ -9,7 +9,7 @@ Every recipe in `data/recipes.json` should use this shape:
   "chapter": "",
   "category": "",
   "description": "",
-  "strictness": "strict | animal-based | practical",
+  "strictness": "strict | animal-based | practical | non-carnivore",
   "reason_not_strict": "",
   "dairy": "none | optional | included | heavy",
   "dairyLevel": "none | optional | included | heavy",
@@ -83,3 +83,5 @@ For a true recommended method outside the three listed appliances, use an object
 - `methods`: include all three appliance keys. Use `notRecommended` or `unavailable` with a clear note when a method does not make sense.
 
 Avoid medical, weight-loss, and health claims in recipes, notes, and UI copy.
+
+For recipes intentionally outside the carnivore scope, use `strictness: "non-carnivore"` and the `Non-carnivore` chapter/category so they remain clearly separated and filterable.
