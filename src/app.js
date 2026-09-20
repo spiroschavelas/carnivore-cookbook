@@ -6,7 +6,8 @@ import { validateRecipeCollection } from "./validation.js";
 
 const state = {
   recipes: [],
-  favourites: getFavourites()
+  favourites: getFavourites(),
+  section: "carnivore"
 };
 
 const elements = {
@@ -20,7 +21,9 @@ const elements = {
   detail: document.querySelector("#recipe-detail"),
   clearFilters: document.querySelector("#clear-filters"),
   filterToggle: document.querySelector("#filter-toggle"),
-  toolbar: document.querySelector(".toolbar")
+  toolbar: document.querySelector(".toolbar"),
+  sectionButtons: [...document.querySelectorAll("[data-section]")],
+  libraryTitle: document.querySelector("#library-title")
 };
 
 init();
@@ -56,7 +59,7 @@ async function init() {
 }
 
 function setupFilters() {
-  const options = buildFilterOptions(state.recipes);
+  const options = buildFilterOptions(recipesForSection());
   populateSelect(document.querySelector("#filter-chapter"), options.chapters, "Any chapter");
   populateSelect(document.querySelector("#filter-category"), options.categories, "Any category");
   populateSelect(document.querySelector("#filter-recommended-method"), options.recommendedMethods, "Any best method");
@@ -69,6 +72,9 @@ function setupFilters() {
 }
 
 function bindEvents() {
+  elements.sectionButtons.forEach((button) => {
+    button.addEventListener("click", () => setSection(button.dataset.section));
+  });
   elements.toolbar.addEventListener("input", applySearchAndFilters);
   elements.toolbar.addEventListener("change", applySearchAndFilters);
   elements.filterToggle.addEventListener("click", () => {
@@ -86,7 +92,8 @@ function bindEvents() {
 function applySearchAndFilters() {
   const filters = readFilters();
   const query = elements.search.value;
-  const visibleRecipes = state.recipes.filter((recipe) =>
+  const sectionRecipes = recipesForSection();
+  const visibleRecipes = sectionRecipes.filter((recipe) =>
     recipeMatchesSearch(recipe, query) && recipeMatchesFilters(recipe, filters, state.favourites)
   );
 
@@ -98,10 +105,32 @@ function applySearchAndFilters() {
     }
   });
 
-  elements.total.textContent = state.recipes.length;
+  elements.total.textContent = sectionRecipes.length;
   elements.visible.textContent = visibleRecipes.length;
-  elements.favouriteCount.textContent = state.favourites.size;
+  elements.favouriteCount.textContent = sectionRecipes.filter((recipe) => state.favourites.has(recipe.id)).length;
   elements.empty.hidden = visibleRecipes.length > 0;
+}
+
+function setSection(section) {
+  if (!["carnivore", "non-carnivore"].includes(section) || section === state.section) return;
+  state.section = section;
+  elements.sectionButtons.forEach((button) => {
+    const active = button.dataset.section === section;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  elements.libraryTitle.textContent = section === "non-carnivore" ? "Non-carnivore" : "Carnivore";
+  elements.search.value = "";
+  setupFilters();
+  resetFilters();
+  applySearchAndFilters();
+}
+
+function recipesForSection() {
+  const showNonCarnivore = state.section === "non-carnivore";
+  return state.recipes.filter((recipe) =>
+    showNonCarnivore ? recipe.strictness === "non-carnivore" : recipe.strictness !== "non-carnivore"
+  );
 }
 
 function openRecipe(recipe) {
