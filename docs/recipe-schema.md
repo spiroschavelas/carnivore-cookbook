@@ -1,6 +1,6 @@
 # Recipe schema
 
-Every recipe in `data/recipes.json` should use this shape:
+Every recipe object in either `data/recipes.json` or `data/non-carnivore-recipes.json` should use this shape:
 
 ```json
 {
@@ -76,12 +76,16 @@ For a true recommended method outside the three listed appliances, use an object
 - `category`: filter category.
 - `description`: short practical card summary.
 - `dairy` and `dairyLevel`: dairy is valid in this cookbook. Use these fields for filtering and clarity, not as a warning.
-- `baseServings`: serving count used for ingredient scaling.
-- `ingredients`: use structured quantities where practical. Non-numeric items can use `quantity: null` and keep the original text.
+- `baseServings`: positive whole-number serving count used for ingredient scaling.
+- `servings`: stored base serving value and normally the same as `baseServings`.
+- `ingredients`: use structured numeric quantities where practical. Non-numeric items can use `quantity: null` and keep the original text.
 - `recommendedMethod`: one of `oven`, `airFryer`, or `blackstone`, or an object with `type: "other"`, `label`, `reason`, and optional `instructions`.
 - `recommendedReason`: short practical reason for appliance-string recommendations. Other-method recipes put the reason inside the `recommendedMethod` object.
-- `methods`: include all three appliance keys. Use `notRecommended` or `unavailable` with a clear note when a method does not make sense.
+- `methods`: include all three appliance keys. Usable methods need instructions. `notRecommended` and `unavailable` need a practical note and are treated by the current renderer as unsuitable rather than normal selectable method tabs.
+- `image`: optional repository-relative image path under `assets/images/recipes/`. A cache-busting query string may be appended when deliberately required by deployment verification.
 
 Avoid medical, weight-loss, and health claims in recipes, notes, and UI copy.
 
-For recipes intentionally outside the carnivore scope, use `strictness: "non-carnivore"` and the `Non-carnivore` chapter/category so they remain clearly separated and filterable.
+For recipes intentionally outside the carnivore scope, use `strictness: "non-carnivore"`, `chapter: "Non-carnivore"`, and `category: "non-carnivore"`, and store them in `data/non-carnivore-recipes.json`.
+
+For the operational addition, image, deployment, cache, and acceptance sequence, follow `docs/adding-recipes.md`.

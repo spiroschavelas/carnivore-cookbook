@@ -19,7 +19,13 @@ Published site: https://spiroschavelas.github.io/carnivore-cookbook/
 
 Studio helps create recipe data, preview it, copy JSON, download one recipe, download an updated `recipes.json`, save a local draft, load a local draft, and clear the form. It includes base servings, dairy level, recommended method, and per-appliance instructions.
 
-Studio does not automatically update the deployed site. Commit the updated `data/recipes.json` and redeploy.
+Studio does not automatically update the deployed site. Commit the updated recipe data and redeploy.
+
+## Maintenance
+
+Use `docs/adding-recipes.md` as the authoritative project workflow for adding or updating a recipe, adding its image, recording image provenance, deploying through GitHub Pages, handling cache issues, and completing live verification.
+
+Use `docs/recipe-schema.md` for the recipe field reference.
 
 ## Constraints
 
