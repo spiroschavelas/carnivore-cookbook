@@ -1,4 +1,4 @@
-const CACHE_NAME = "carnivore-cookbook-v9";
+const CACHE_NAME = "carnivore-cookbook-v10";
 const ASSETS = [
   "index.html",
   "studio.html",
@@ -15,7 +15,8 @@ const ASSETS = [
   "data/recipes.json",
   "data/non-carnivore-recipes.json",
   "data/categories.json",
-  "data/tags.json"
+  "data/tags.json",
+  "assets/images/recipes/braised-beef-red-wine-1kg.png?v=20260926-2"
 ];
 const DATA_PATHS = new Set(["data/recipes.json", "data/non-carnivore-recipes.json", "data/categories.json", "data/tags.json"]);
 
