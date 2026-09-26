@@ -298,5 +298,152 @@
       }
     },
     "image": "assets/images/recipes/giouvarlakia-avgolemono-argiro.webp"
+  },
+  {
+    "id": "braised-beef-red-wine-1kg",
+    "title": "Μοσχάρι μπρεζέ με κόκκινο κρασί",
+    "chapter": "Non-carnivore",
+    "category": "non-carnivore",
+    "description": "Whole-piece slow-braised beef with a substantial fat cap, red wine, beef broth, carrot, celery and aromatics, adapted for about 1 kg of boneless beef.",
+    "strictness": "non-carnivore",
+    "reason_not_strict": "Uses carrot, celery, onion, garlic, red wine, olive oil and herbs.",
+    "dairy": "none",
+    "dairyLevel": "none",
+    "equipment": [
+      "Dutch oven or heavy oven-safe casserole with tight-fitting lid",
+      "kitchen tongs"
+    ],
+    "time_minutes": 240,
+    "prepTimeMinutes": 25,
+    "difficulty": "easy",
+    "baseServings": 4,
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": 1000,
+        "unit": "g",
+        "item": "boneless beef for slow cooking, whole piece with fat cap",
+        "original": "1 kg boneless beef for slow cooking, whole piece with fat cap"
+      },
+      {
+        "quantity": 150,
+        "unit": "g",
+        "item": "carrot, cut into thick pieces",
+        "original": "150 g carrot"
+      },
+      {
+        "quantity": 80,
+        "unit": "g",
+        "item": "celery, cut into 2 cm pieces",
+        "original": "80 g celery"
+      },
+      {
+        "quantity": 150,
+        "unit": "g",
+        "item": "onion, roughly chopped",
+        "original": "150 g onion"
+      },
+      {
+        "quantity": 10,
+        "unit": "g",
+        "item": "garlic, chopped",
+        "original": "10 g garlic (about 2 cloves)"
+      },
+      {
+        "quantity": 1.5,
+        "unit": "tbsp",
+        "item": "olive oil, using less if the beef renders plenty of fat",
+        "original": "1 1/2 tbsp olive oil"
+      },
+      {
+        "quantity": 200,
+        "unit": "ml",
+        "item": "dry red wine",
+        "original": "200 ml dry red wine"
+      },
+      {
+        "quantity": 400,
+        "unit": "ml",
+        "item": "beef broth, added only as needed so the liquid reaches about halfway up the meat",
+        "original": "up to 400 ml beef broth"
+      },
+      {
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "bay leaf",
+        "original": "1 bay leaf"
+      },
+      {
+        "quantity": 2,
+        "unit": "pieces",
+        "item": "fresh thyme sprigs",
+        "original": "2 fresh thyme sprigs"
+      },
+      {
+        "quantity": 1,
+        "unit": "pieces",
+        "item": "fresh rosemary sprig",
+        "original": "1 fresh rosemary sprig"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "salt to taste",
+        "original": "salt to taste"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "item": "freshly ground black pepper to taste",
+        "original": "freshly ground black pepper to taste"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 160 C conventional or 150 C fan. Remove the beef from the vacuum pack and pat it very dry. Season well with salt and black pepper. Keep the piece whole. Trim only exceptionally thick or hard external fat; keep the main fat cap.",
+      "Heat a Dutch oven over medium-high heat. Put the beef in fat-side down first. Brown for about 4 to 5 minutes so the fat begins to render and develops good colour. Turn and brown the exposed meat side for about 3 to 4 minutes, then use tongs to brown the edges where practical. Add only as much olive oil as needed. Transfer the beef to a plate.",
+      "Add the onion, carrot and celery to the rendered fat in the pot. Cook for 5 to 7 minutes, stirring occasionally, until they begin to soften and colour. Add the garlic and cook for about 1 minute.",
+      "Pour in the red wine and scrape up the browned bits from the bottom. Simmer until the wine is reduced by roughly half.",
+      "Return the beef to the pot with the fat cap facing upward. Add the bay leaf, thyme and rosemary. Add enough beef broth for the braising liquid to reach roughly halfway up the meat, at most about two-thirds. Do not automatically use all the broth.",
+      "Bring the liquid just to a gentle simmer on the stovetop. Cover tightly and transfer to the oven.",
+      "Braise for about 2 1/2 hours, then test the thickest part with a thin knife or fork. If there is clear resistance, continue cooking and check every 20 to 30 minutes. For a roughly 1 kg piece, expect around 3 to 3 1/2 hours in many cases. Tenderness, not the clock alone, determines doneness.",
+      "When a knife or fork enters with very little resistance, remove the beef and rest it for 15 to 20 minutes. Remove the bay leaf and herb stems. Skim excess visible fat from the braising liquid.",
+      "For a smoother, thicker sauce, blend the cooked vegetables into the braising liquid. Alternatively leave them intact. If the sauce is too thin, simmer it uncovered on the stovetop for 5 to 10 minutes to reduce before serving with the beef."
+    ],
+    "notes": "Base recipe is 4 servings from about 1 kg raw boneless beef, approximately 250 g raw beef per serving. Numeric ingredient quantities scale automatically with the serving selector. Cooking time does not scale linearly with servings or meat weight; use tenderness as the endpoint. Adapted from Kelsey Nixon's Sunday Pot Roast (Food Network): https://www.foodnetwork.com/recipes/sunday-pot-roast-2125775. The source uses a 4 lb boneless chuck roast for 8 servings and the same core braising technique.",
+    "tags": [
+      "beef",
+      "braise",
+      "dutch oven",
+      "non-carnivore",
+      "pot roast",
+      "red wine",
+      "slow cooking"
+    ],
+    "recommendedMethod": "oven",
+    "recommendedReason": "For this whole, fatty slow-cooking cut, covered oven braising gives steady, even heat while the connective tissue softens.",
+    "methods": {
+      "oven": {
+        "available": true,
+        "quality": "best",
+        "note": "Use a covered Dutch oven or heavy oven-safe casserole.",
+        "instructions": [
+          "Preheat to 160 C conventional or 150 C fan.",
+          "Braise covered until fork-tender, checking from 2 1/2 hours and typically allowing around 3 to 3 1/2 hours for a roughly 1 kg piece.",
+          "Rest the beef for 15 to 20 minutes before serving."
+        ]
+      },
+      "airFryer": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "This cut is intended for long, moist braising rather than dry air-fryer cooking.",
+        "instructions": []
+      },
+      "blackstone": {
+        "available": false,
+        "quality": "notRecommended",
+        "note": "A flat griddle can brown the meat but cannot provide the covered moist braise required for the full recipe.",
+        "instructions": []
+      }
+    }
   }
 ]
